@@ -14,6 +14,7 @@ ReactDOM.render(
   <BrowserRouter>
     <div>
       <Navbar />
+
       <Switch>
         {/* Home Route */}
         <Route exact path="/">
