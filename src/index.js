@@ -1,12 +1,34 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
+import React from "react";
+import ReactDOM from "react-dom";
 
-ReactDOM.render(<App />, document.getElementById('root'));
+import { BrowserRouter, Route, Switch, Redirect } from "react-router-dom";
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();
+// Default Components
+import Navbar from "./Components/Navbar/Navbar";
+
+// Pages
+import Home from "./Pages/Home/Home";
+import About from "./Pages/About/About";
+
+ReactDOM.render(
+  <BrowserRouter>
+    <div>
+      <Navbar />
+      <Switch>
+        {/* Home Route */}
+        <Route exact path="/">
+          <Home />
+        </Route>
+        {/* About Us */}
+        <Route path="/about">
+          <About />
+        </Route>
+        {/* Contact Us */}
+        <Route path="/contact">
+          <About />
+        </Route>
+      </Switch>
+    </div>
+  </BrowserRouter>,
+  document.getElementById("root")
+);
