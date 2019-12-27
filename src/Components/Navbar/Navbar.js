@@ -107,7 +107,7 @@ const Navbar = () => {
                   <span class="nav-link-inner--text d-lg-none">Profile</span>
                 </a>
               ) : (
-                <a class="nav-link" onClick={() => signInHandler()} href="#">
+                <a class="nav-link" onClick={} href="#">
                   {user.displayName}
                   <span class="nav-link-inner--text d-lg-none">Profile</span>
                 </a>
