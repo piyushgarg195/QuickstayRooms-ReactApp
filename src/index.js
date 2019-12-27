@@ -4,7 +4,7 @@ import ReactDOM from "react-dom";
 import { BrowserRouter, Route, Switch } from "react-router-dom";
 
 // Default Components
-import Navbar from "./Components/Navbar/Navbar";
+// import Navbar2 from "./Components/Navbar/Navbar2";
 
 // Pages
 import Home from "./Pages/Home/Home";
@@ -12,7 +12,7 @@ import Home from "./Pages/Home/Home";
 ReactDOM.render(
 	<BrowserRouter>
 		<div>
-			<Navbar />
+			{/* <Navbar2 /> */}
 			<Switch>
 				{/* Home Route */}
 				<Route exact path='/'>
