@@ -75,6 +75,7 @@ const Navbar = () => {
 						</div>
 					</div>
 
+<<<<<<< HEAD
 					<ul class='navbar-nav ml-lg-auto'>
 						<li class='nav-item'>
 							<a class='nav-link' href='#'>
@@ -114,6 +115,55 @@ const Navbar = () => {
 							)}
 						</li>
 						{/* <li class='nav-item dropdown'>
+=======
+          <ul class="navbar-nav ml-lg-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                Home
+                <span class="nav-link-inner--text d-lg-none">Discover</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                About
+                <span class="nav-link-inner--text d-lg-none">Profile</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                Blog
+                <span class="nav-link-inner--text d-lg-none">Profile</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                Partner with us
+                <span class="nav-link-inner--text d-lg-none">Profile</span>
+              </a>
+            </li>
+
+            <li class="nav-item">
+              {!isSignedIn ? (
+                <a
+                  class="nav-link"
+                  data-toggle="modal"
+                  data-target="#modal-form"
+                  onClick={() => {}}
+                  href="#"
+                >
+                  Sign In
+                  <span class="nav-link-inner--text d-lg-none">Profile</span>
+                </a>
+              ) : (
+                <a class="nav-link" onClick={() => {}} href="#">
+                  {user.displayName}
+                  <span class="nav-link-inner--text d-lg-none">Profile</span>
+                </a>
+              )}
+            </li>
+
+            {/* <li class='nav-item dropdown'>
+>>>>>>> 58b15cc7f002bb9a76eaa629948b1b2a9e07e897
 							<a
 								class='nav-link'
 								href='#'
@@ -141,11 +191,108 @@ const Navbar = () => {
 								</a>
 							</div>
 						</li> */}
+<<<<<<< HEAD
 					</ul>
 				</div>
 			</div>
 		</nav>
 	);
+=======
+          </ul>
+        </div>
+      </div>
+      <div
+        class="modal fade"
+        id="modal-form"
+        tabindex="-1"
+        role="dialog"
+        aria-labelledby="modal-form"
+        aria-hidden="true"
+      >
+        <div
+          class="modal-dialog modal- modal-dialog-centered modal-sm"
+          role="document"
+        >
+          <div class="modal-content">
+            <div class="modal-body p-0">
+              <div class="card bg-secondary shadow border-0">
+                <div class="card-header bg-white pb-5">
+                  <div class="text-muted text-center mb-3">
+                    <small>Sign in with</small>
+                  </div>
+                  <div class="btn-wrapper text-center">
+                    <a
+                      onClick={() => signInHandler()}
+                      class="btn btn-neutral btn-icon"
+                    >
+                      <span class="btn-inner--icon">
+                        <img src="../../assets/img/icons/common/google.svg" />
+                      </span>
+                      <span class="btn-inner--text">Google</span>
+                    </a>
+                  </div>
+                </div>
+                <div class="card-body px-lg-5 py-lg-5">
+                  <div class="text-center text-muted mb-4">
+                    <small>Or sign in with credentials</small>
+                  </div>
+                  <form role="form">
+                    <div class="form-group mb-3">
+                      <div class="input-group input-group-alternative">
+                        <div class="input-group-prepend">
+                          <span class="input-group-text">
+                            <i class="ni ni-email-83"></i>
+                          </span>
+                        </div>
+                        <input
+                          class="form-control"
+                          placeholder="Email"
+                          type="email"
+                        />
+                      </div>
+                    </div>
+                    <div class="form-group">
+                      <div class="input-group input-group-alternative">
+                        <div class="input-group-prepend">
+                          <span class="input-group-text">
+                            <i class="ni ni-lock-circle-open"></i>
+                          </span>
+                        </div>
+                        <input
+                          class="form-control"
+                          placeholder="Password"
+                          type="password"
+                        />
+                      </div>
+                    </div>
+                    <div class="custom-control custom-control-alternative custom-checkbox">
+                      <input
+                        class="custom-control-input"
+                        id=" customCheckLogin"
+                        type="checkbox"
+                      />
+                      <label
+                        class="custom-control-label"
+                        for=" customCheckLogin"
+                      >
+                        <span>Remember me</span>
+                      </label>
+                    </div>
+                    <div class="text-center">
+                      <button type="button" class="btn btn-primary my-4">
+                        Sign in
+                      </button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+  );
+>>>>>>> 58b15cc7f002bb9a76eaa629948b1b2a9e07e897
 };
 
 export default Navbar;

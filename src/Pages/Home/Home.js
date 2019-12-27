@@ -1,6 +1,7 @@
 import React from "react";
 
 // Custom Components
+<<<<<<< HEAD
 import Carousel from "../../Components/carousel/Carousel";
 import Form from "../../Components/Form/Form";
 
@@ -25,6 +26,24 @@ function Home() {
 			</div>
 		</div>
 	);
+=======
+import Model from "../../Components/Modals/Model";
+import firebase from "../../firebase";
+
+function Home() {
+  return (
+    <div className="App">
+      <h1>Home Page</h1>
+      <button
+        onClick={() => firebase.auth().signOut()}
+        className="btn btn-danger"
+      >
+        Logout
+      </button>
+      {/* <Model /> */}
+    </div>
+  );
+>>>>>>> 58b15cc7f002bb9a76eaa629948b1b2a9e07e897
 }
 
 export default Home;
