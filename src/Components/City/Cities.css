@@ -1,0 +1,21 @@
+.img {
+	border: 1px solid grey;
+	border-radius: 50%;
+	width: 75px;
+	height: 75px;
+	margin: 0px;
+}
+.city-name {
+	margin-top: 20%;
+	font-weight: 1000;
+}
+.fact-container {
+	border: 1px solid grey;
+	width: 100%;
+	padding: 20px;
+	text-align: center;
+}
+
+.fact-container p {
+	font-weight: 1000;
+}

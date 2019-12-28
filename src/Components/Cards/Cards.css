@@ -1,0 +1,22 @@
+.card {
+	border: 1px solid black;
+	height: 300px;
+}
+.card-img {
+	border-bottom: 1px solid black;
+	height: 60%;
+}
+.card-text {
+	padding: 5px;
+}
+
+.card-add p {
+	margin: 0;
+	font-weight: 1000;
+}
+.card-price p {
+	margin-top: 10px;
+}
+.card-price p span {
+	font-weight: 1000;
+}
