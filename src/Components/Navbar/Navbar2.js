@@ -37,7 +37,7 @@ const Navbar2 = () => {
 	});
 
 	return (
-		<nav style={{ zIndex: 10 }} class='navbar navbar-expand-lg'>
+		<nav class='navbar navbar-expand-lg navbar-dark'>
 			<div class='container'>
 				<a class='navbar-brand' href='#'>
 					Quickstay

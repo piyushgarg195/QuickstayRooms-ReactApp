@@ -6,9 +6,6 @@ import React from "react";
 import Search from "../../Components/search/search";
 import Navbar2 from "../../Components/Navbar/Navbar2";
 
-const url =
-	"https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSlCXCL9puGe6KTrp3QIsw1cS2kgyiNBVT_3M-vbdncTMOcCmpd";
-
 function Home() {
 	return (
 		<div>
@@ -28,13 +25,11 @@ function Home() {
 			>
 				<Form />
 			</div> */}
-			<div
-				style={{
-					backgroundImage: "url(" + url + ")"
-					// backgroundRepeat: "no-repeat"
-					// backgroundSize: "cover",
-				}}
-			>
+			<div>
+				<img
+					style={{ position: "absolute", width: "100%", height: "80%" }}
+					src='https://www.bookingholdings.com/wp-content/uploads/2018/01/booking_background.jpg'
+				></img>
 				<Navbar2 />
 				<Search />
 			</div>

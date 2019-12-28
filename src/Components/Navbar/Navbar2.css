@@ -5,3 +5,7 @@
 .nav-link {
 	color: #74b9ff;
 }
+
+.navbar a {
+	font-size: 150%;
+}
