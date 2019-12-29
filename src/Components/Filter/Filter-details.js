@@ -25,7 +25,7 @@ function Filter() {
 					</div>
 					<div className='col-sm-2'>
 						<div className='form-group'>
-							<select className='form-control'>
+							<select className='form-control rad'>
 								<option>Boys</option>
 								<option>Girls</option>
 							</select>
@@ -33,7 +33,7 @@ function Filter() {
 					</div>
 					<div className='col-sm-2'>
 						<div className='form-group'>
-							<select className='form-control'>
+							<select className='form-control rad'>
 								<option>Food</option>
 								<option>No Food</option>
 							</select>
@@ -41,7 +41,7 @@ function Filter() {
 					</div>
 					<div className='col-sm-2'>
 						<div className='form-group'>
-							<select className='form-control'>
+							<select className='form-control rad'>
 								<option>Locality</option>
 							</select>
 						</div>

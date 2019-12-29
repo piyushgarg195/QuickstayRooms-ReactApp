@@ -7,6 +7,7 @@ import { BrowserRouter, Route, Switch } from "react-router-dom";
 import Home from "./Pages/Home/Home";
 import Booking from "./Pages/Bookings/Booking";
 import Details from "./Pages/Details/Details";
+import Pg from "./Pages/PG/Pg";
 
 ReactDOM.render(
 	<BrowserRouter>
@@ -21,6 +22,9 @@ ReactDOM.render(
 				</Route>
 				<Route exact path='/details'>
 					<Details />
+				</Route>
+				<Route exact path='/pg'>
+					<Pg />
 				</Route>
 			</Switch>
 		</div>
