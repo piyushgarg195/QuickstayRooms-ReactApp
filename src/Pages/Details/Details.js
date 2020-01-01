@@ -18,7 +18,7 @@ function Details() {
 			<div>
 				<Filter />
 			</div>
-			<div className='row'>
+			<div style={{ width: "100%" }} className='row'>
 				<div className='col-sm-3'>
 					<Card />
 				</div>

@@ -6,7 +6,7 @@ import "./Cities.css";
 function Cities() {
 	return (
 		<div>
-			<div className='row' style={{ padding: 20 }}>
+			<div className='row' style={{ padding: 20, width: "100%" }}>
 				<div className='col-sm-6'>
 					<div className='row'>
 						<div className='col-sm-2'>

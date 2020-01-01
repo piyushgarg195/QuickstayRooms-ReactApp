@@ -3,19 +3,25 @@ body {
 	font-family: "Roboto", sans-serif;
 	color: black;
 }
+.pg-det-container {
+	align-content: center;
+}
 
 .pg-img-container {
 	background-color: #e9ecef;
-	padding: 20px;
+	padding: 5px;
 	z-index: -10;
 }
 .pg-img {
-	border: 1px solid black;
-	height: 500px;
+	/* border: 1px solid black; */
+	/* height: 500px; */
 	background-color: white;
 }
 .pg-texts {
 	margin-top: 20px;
+}
+.pg-texts button {
+	width: 150px;
 }
 .pg-texts p {
 	border: 1px solid black;
@@ -23,6 +29,22 @@ body {
 	text-align: center;
 	padding: 5px;
 	border-radius: 10px;
+}
+#pg-specs {
+}
+.room-det {
+	margin-top: 10px;
+}
+.hr {
+	/* height: 3.57143rem;
+	opacity: 0.1;
+	top: 0rem;
+	position: relative;
+	border-width: 0.5px;
+	border-style: solid;
+	border-color: rgb(52, 52, 52);
+	border-image: initial;
+	margin: 0rem 1.42857rem 0rem 4.28571rem; */
 }
 .animated {
 	transition-duration: 0.2s;
@@ -34,10 +56,10 @@ body {
 	margin-top: 10px;
 }
 .sharing:hover {
-	border-left: 10px solid blue;
+	border-left: 10px solid #12cad6;
 	opacity: 0.8;
-	transform: scale(1.1);
-	border-radius: 10px;
+	/* transform: scale(1.1); */
+	/* border-radius: 10px; */
 }
 .rm-num-container {
 	border: 1px solid black;
@@ -63,6 +85,6 @@ body {
 }
 
 .pg-btns {
-	margin-top: 30%;
+	margin-top: 5%;
 	padding: 10px;
 }

@@ -5,7 +5,7 @@ function Filter() {
 	return (
 		<div>
 			<div className='filter-cotanier'>
-				<div className='row'>
+				<div style={{ width: "100%" }} className='row'>
 					<div className='col-sm-2'>
 						<div class='form-group'>
 							<div class='input-group input-group-alternative'>

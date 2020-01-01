@@ -37,6 +37,7 @@ const Navbar = () => {
 		<nav class='navbar navbar-expand-lg navbar-dark bg-primary '>
 			<div class='container'>
 				<a class='navbar-brand' href='#'>
+					<img style={{ marginRight: 10 }} src='assets/Santa_QS.png' />
 					Quickstay
 				</a>
 				<button
@@ -55,7 +56,7 @@ const Navbar = () => {
 						<div class='row'>
 							<div class='col-6 collapse-brand'>
 								<a href='index.html'>
-									<img src='assets/img/brand/blue.png' />
+									<img src='assets/Santa_QS.png' />
 								</a>
 							</div>
 							<div class='col-6 collapse-close'>
