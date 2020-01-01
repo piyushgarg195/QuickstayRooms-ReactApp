@@ -53,10 +53,33 @@ function PgDetail() {
 										<p>Room 1</p>
 										<div className='row'>
 											<div className='col-sm-6'>
-												<div className='rm-num-color'></div>
+												<div class='custom-control custom-radio '>
+													<input
+														// name='custom-radio-1'
+														class='custom-control-input'
+														checked
+														id='customRadio1'
+														type='radio'
+													/>
+													<label
+														class='custom-control-label'
+														for='customRadio1'
+													></label>
+												</div>
 											</div>
 											<div className='col-sm-6'>
-												<div className='rm-num-color-active'></div>
+												<div class='custom-control custom-radio '>
+													<input
+														// name='custom-radio-1'
+														class='custom-control-input'
+														id='customRadio2'
+														type='radio'
+													/>
+													<label
+														class='custom-control-label'
+														for='customRadio2'
+													></label>
+												</div>
 											</div>
 										</div>
 									</div>
@@ -66,10 +89,33 @@ function PgDetail() {
 										<p>Room 2</p>
 										<div className='row'>
 											<div className='col-sm-6'>
-												<div className='rm-num-color'></div>
+												<div class='custom-control custom-radio '>
+													<input
+														// name='custom-radio-1'
+														class='custom-control-input'
+														id='customRadio2'
+														type='radio'
+													/>
+													<label
+														class='custom-control-label'
+														for='customRadio2'
+													></label>
+												</div>
 											</div>
 											<div className='col-sm-6'>
-												<div className='rm-num-color-active'></div>
+												{/* <div className='rm-num-color-active'></div> */}
+												<div class='custom-control custom-radio '>
+													<input
+														// name='custom-radio-1'
+														class='custom-control-input'
+														id='customRadio2'
+														type='radio'
+													/>
+													<label
+														class='custom-control-label'
+														for='customRadio2'
+													></label>
+												</div>
 											</div>
 										</div>
 									</div>
@@ -79,10 +125,33 @@ function PgDetail() {
 										<p>Room 3</p>
 										<div className='row'>
 											<div className='col-sm-6'>
-												<div className='rm-num-color'></div>
+												<div class='custom-control custom-radio '>
+													<input
+														// name='custom-radio-1'
+														class='custom-control-input'
+														id='customRadio2'
+														type='radio'
+													/>
+													<label
+														class='custom-control-label'
+														for='customRadio2'
+													></label>
+												</div>
 											</div>
 											<div className='col-sm-6'>
-												<div className='rm-num-color-active'></div>
+												<div class='custom-control custom-radio '>
+													<input
+														// name='custom-radio-1'
+														class='custom-control-input'
+														checked
+														id='customRadio2'
+														type='radio'
+													/>
+													<label
+														class='custom-control-label'
+														for='customRadio2'
+													></label>
+												</div>
 											</div>
 										</div>
 									</div>
@@ -92,10 +161,32 @@ function PgDetail() {
 										<p>Room 4</p>
 										<div className='row'>
 											<div className='col-sm-6'>
-												<div className='rm-num-color'></div>
+												<div class='custom-control custom-radio '>
+													<input
+														// name='custom-radio-1'
+														class='custom-control-input'
+														id='customRadio2'
+														type='radio'
+													/>
+													<label
+														class='custom-control-label'
+														for='customRadio2'
+													></label>
+												</div>
 											</div>
 											<div className='col-sm-6'>
-												<div className='rm-num-color-active'></div>
+												<div class='custom-control custom-radio '>
+													<input
+														// name='custom-radio-1'
+														class='custom-control-input'
+														id='customRadio2'
+														type='radio'
+													/>
+													<label
+														class='custom-control-label'
+														for='customRadio2'
+													></label>
+												</div>
 											</div>
 										</div>
 									</div>
@@ -105,10 +196,34 @@ function PgDetail() {
 										<p>Room 5</p>
 										<div className='row'>
 											<div className='col-sm-6'>
-												<div className='rm-num-color-active'></div>
+												<div class='custom-control custom-radio '>
+													<input
+														// name='custom-radio-1'
+														class='custom-control-input'
+														checked
+														id='customRadio2'
+														type='radio'
+													/>
+													<label
+														class='custom-control-label'
+														for='customRadio2'
+													></label>
+												</div>
 											</div>
 											<div className='col-sm-6'>
-												<div className='rm-num-color-active'></div>
+												<div class='custom-control custom-radio '>
+													<input
+														// name='custom-radio-1'
+														class='custom-control-input'
+														checked
+														id='customRadio2'
+														type='radio'
+													/>
+													<label
+														class='custom-control-label'
+														for='customRadio2'
+													></label>
+												</div>
 											</div>
 										</div>
 									</div>
@@ -118,10 +233,33 @@ function PgDetail() {
 										<p>Room 6</p>
 										<div className='row'>
 											<div className='col-sm-6'>
-												<div className='rm-num-color-active'></div>
+												<div class='custom-control custom-radio '>
+													<input
+														// name='custom-radio-1'
+														class='custom-control-input'
+														id='customRadio2'
+														type='radio'
+													/>
+													<label
+														class='custom-control-label'
+														for='customRadio2'
+													></label>
+												</div>
 											</div>
 											<div className='col-sm-6'>
-												<div className='rm-num-color'></div>
+												<div class='custom-control custom-radio '>
+													<input
+														// name='custom-radio-1'
+														class='custom-control-input'
+														id='customRadio2'
+														checked
+														type='radio'
+													/>
+													<label
+														class='custom-control-label'
+														for='customRadio2'
+													></label>
+												</div>
 											</div>
 										</div>
 									</div>
