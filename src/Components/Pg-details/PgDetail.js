@@ -4,43 +4,55 @@ import "./PgDetail.css";
 function PgDetail() {
 	return (
 		<div>
-			<div className='row'>
+			<div className=' row'>
 				<div className='col-sm-6'>
 					<div className='pg-img-container'>
 						<div className='pg-img'>
 							<h1>PG IMAGES</h1>
 						</div>
 						<div className='row'>
-							<div className='col-sm-2 pg-texts'>
-								<p>Exterior</p>
+							<div className='col col-md-4 col-xl-2 pg-texts'>
+								{/* <p>Exterior</p> */}
+								<button type='button' class='btn btn-outline-default'>
+									Exterior
+								</button>
 							</div>
-							<div className='col-sm-2 pg-texts'>
-								<p>Private</p>
+							<div className='col col-md-4 col-xl-2 pg-texts'>
+								{/* <p>Private</p> */}
+								<button type='button' class='btn btn-outline-default'>
+									Private
+								</button>
 							</div>
-							<div className='col-sm-2 pg-texts'>
-								<p>Two sharing</p>
+							<div className='col col-md-3 pg-texts'>
+								{/* <p>Two sharing</p> */}
+								<button type='button' class='btn btn-outline-default'>
+									Two Sharing
+								</button>
 							</div>
-							<div className='col-sm-2 pg-texts'>
-								<p>Interior</p>
+							<div className='col col-md-4 col-xl-2 pg-texts'>
+								{/* <p>Interior</p> */}
+								<button type='button' class='btn btn-outline-default'>
+									Interior
+								</button>
 							</div>
 						</div>
 					</div>
 				</div>
 				<div className='col-sm-6'>
 					<h4>Room Type</h4>
-					<div className='row'>
+					<div style={{ padding: 20 }} className='row'>
 						<div className='col-sm-3'>
-							<div className='sharing'>
+							<div className='animated sharing'>
 								<p>
 									Three Sharing <span>Rs.4,999/- onwards</span>
 								</p>
 							</div>
-							<div className='sharing sharing-active'>
+							<div className='animated sharing'>
 								<p>
 									Two Sharing <span>Rs.4,999/- onwards</span>
 								</p>
 							</div>
-							<div className='sharing'>
+							<div className='animated sharing'>
 								<p>
 									Three Sharing <span>Rs.4,999/- onwards</span>
 								</p>
@@ -48,216 +60,216 @@ function PgDetail() {
 						</div>
 						<div className='col-sm-6'>
 							<div className='row'>
-								<div className='col-sm-4'>
+								<div className='col-md-12 col-xl-4'>
 									<div className='rm-num-container'>
 										<p>Room 1</p>
 										<div className='row'>
-											<div className='col-sm-6'>
+											<div className='col col-md-6'>
 												<div class='custom-control custom-radio '>
 													<input
 														// name='custom-radio-1'
 														class='custom-control-input'
 														checked
-														id='customRadio1'
+														id='room11'
 														type='radio'
 													/>
 													<label
 														class='custom-control-label'
-														for='customRadio1'
+														for='room11'
 													></label>
 												</div>
 											</div>
-											<div className='col-sm-6'>
+											<div className='col col-md-6'>
 												<div class='custom-control custom-radio '>
 													<input
 														// name='custom-radio-1'
 														class='custom-control-input'
-														id='customRadio2'
+														id='room12'
 														type='radio'
 													/>
 													<label
 														class='custom-control-label'
-														for='customRadio2'
+														for='room12'
 													></label>
 												</div>
 											</div>
 										</div>
 									</div>
 								</div>
-								<div className='col-sm-4'>
+								<div className='col-md-12 col-xl-4'>
 									<div className='rm-num-container'>
 										<p>Room 2</p>
 										<div className='row'>
-											<div className='col-sm-6'>
+											<div className='col col-sm-6'>
 												<div class='custom-control custom-radio '>
 													<input
 														// name='custom-radio-1'
 														class='custom-control-input'
-														id='customRadio2'
+														id='room21'
 														type='radio'
 													/>
 													<label
 														class='custom-control-label'
-														for='customRadio2'
+														for='room21'
 													></label>
 												</div>
 											</div>
-											<div className='col-sm-6'>
+											<div className='col col-sm-6'>
 												{/* <div className='rm-num-color-active'></div> */}
 												<div class='custom-control custom-radio '>
 													<input
 														// name='custom-radio-1'
 														class='custom-control-input'
-														id='customRadio2'
+														id='room22'
 														type='radio'
 													/>
 													<label
 														class='custom-control-label'
-														for='customRadio2'
+														for='room22'
 													></label>
 												</div>
 											</div>
 										</div>
 									</div>
 								</div>
-								<div className='col-sm-4'>
+								<div className='col-md-12 col-xl-4'>
 									<div className='rm-num-container'>
 										<p>Room 3</p>
 										<div className='row'>
-											<div className='col-sm-6'>
+											<div className='col col-sm-6'>
 												<div class='custom-control custom-radio '>
 													<input
 														// name='custom-radio-1'
 														class='custom-control-input'
-														id='customRadio2'
+														id='room31'
 														type='radio'
 													/>
 													<label
 														class='custom-control-label'
-														for='customRadio2'
+														for='room31'
 													></label>
 												</div>
 											</div>
-											<div className='col-sm-6'>
+											<div className='col col-sm-6'>
 												<div class='custom-control custom-radio '>
 													<input
 														// name='custom-radio-1'
 														class='custom-control-input'
 														checked
-														id='customRadio2'
+														id='room32'
 														type='radio'
 													/>
 													<label
 														class='custom-control-label'
-														for='customRadio2'
+														for='room32'
 													></label>
 												</div>
 											</div>
 										</div>
 									</div>
 								</div>
-								<div className='col-sm-4'>
+								<div className='col-md-12 col-xl-4'>
 									<div className='rm-num-container'>
 										<p>Room 4</p>
 										<div className='row'>
-											<div className='col-sm-6'>
+											<div className='col col-sm-6'>
 												<div class='custom-control custom-radio '>
 													<input
 														// name='custom-radio-1'
 														class='custom-control-input'
-														id='customRadio2'
+														id='room41'
 														type='radio'
 													/>
 													<label
 														class='custom-control-label'
-														for='customRadio2'
+														for='room41'
 													></label>
 												</div>
 											</div>
-											<div className='col-sm-6'>
+											<div className='col col-sm-6'>
 												<div class='custom-control custom-radio '>
 													<input
 														// name='custom-radio-1'
 														class='custom-control-input'
-														id='customRadio2'
+														id='room42'
 														type='radio'
 													/>
 													<label
 														class='custom-control-label'
-														for='customRadio2'
+														for='room42'
 													></label>
 												</div>
 											</div>
 										</div>
 									</div>
 								</div>
-								<div className='col-sm-4'>
+								<div className='col-md-12 col-xl-4'>
 									<div className='rm-num-container'>
 										<p>Room 5</p>
 										<div className='row'>
-											<div className='col-sm-6'>
+											<div className='col col-sm-6'>
 												<div class='custom-control custom-radio '>
 													<input
 														// name='custom-radio-1'
 														class='custom-control-input'
 														checked
-														id='customRadio2'
+														id='room51'
 														type='radio'
 													/>
 													<label
 														class='custom-control-label'
-														for='customRadio2'
+														for='room51'
 													></label>
 												</div>
 											</div>
-											<div className='col-sm-6'>
+											<div className='col col-sm-6'>
 												<div class='custom-control custom-radio '>
 													<input
 														// name='custom-radio-1'
 														class='custom-control-input'
 														checked
-														id='customRadio2'
+														id='room52'
 														type='radio'
 													/>
 													<label
 														class='custom-control-label'
-														for='customRadio2'
+														for='room52'
 													></label>
 												</div>
 											</div>
 										</div>
 									</div>
 								</div>
-								<div className='col-sm-4'>
+								<div className='col-md-12 col-xl-4'>
 									<div className='rm-num-container'>
 										<p>Room 6</p>
 										<div className='row'>
-											<div className='col-sm-6'>
+											<div className='col col-sm-6'>
 												<div class='custom-control custom-radio '>
 													<input
 														// name='custom-radio-1'
 														class='custom-control-input'
-														id='customRadio2'
+														id='room61'
 														type='radio'
 													/>
 													<label
 														class='custom-control-label'
-														for='customRadio2'
+														for='room61'
 													></label>
 												</div>
 											</div>
-											<div className='col-sm-6'>
+											<div className='col col-sm-6'>
 												<div class='custom-control custom-radio '>
 													<input
 														// name='custom-radio-1'
 														class='custom-control-input'
-														id='customRadio2'
+														id='room62'
 														checked
 														type='radio'
 													/>
 													<label
 														class='custom-control-label'
-														for='customRadio2'
+														for='room62'
 													></label>
 												</div>
 											</div>
@@ -269,12 +281,12 @@ function PgDetail() {
 					</div>
 					<div className='pg-btns'>
 						<div className='row'>
-							<div className='col-sm-6'>
+							<div className='col col-md-6'>
 								<button type='button' class='btn btn-outline-danger'>
 									SCHEDULE A VISIT
 								</button>
 							</div>
-							<div className='col-sm-6'>
+							<div className='col col-md-6'>
 								<button type='button' class='btn btn-danger'>
 									BOOK NOW
 								</button>

@@ -1,3 +1,9 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:500&display=swap");
+body {
+	font-family: "Roboto", sans-serif;
+	color: black;
+}
+
 .pg-img-container {
 	background-color: #e9ecef;
 	padding: 20px;
@@ -18,18 +24,28 @@
 	padding: 5px;
 	border-radius: 10px;
 }
+.animated {
+	transition-duration: 0.2s;
+	transition-timing-function: ease-in-out;
+}
 .sharing {
 	border: 1px solid black;
 	padding: 5px;
 	margin-top: 10px;
 }
-.sharing-active {
+.sharing:hover {
 	border-left: 10px solid blue;
+	opacity: 0.8;
+	transform: scale(1.1);
+	border-radius: 10px;
 }
 .rm-num-container {
 	border: 1px solid black;
 	margin-top: 10px;
 	padding: 5px;
+	align-content: center;
+	text-align: center;
+	border-radius: 10px;
 }
 
 .rm-num-color {
@@ -48,4 +64,5 @@
 
 .pg-btns {
 	margin-top: 30%;
+	padding: 10px;
 }
