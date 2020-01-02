@@ -150,9 +150,23 @@ function FlatDetail() {
 					style={{ marginTop: 10 }}
 					className={size ? "col-lg-6" : "col-lg-6 fix-col"}
 				>
-					<h4>Flat Type</h4>
+					<div className='row'>
+						<div className='col-lg-4'>
+							<h4>Flat Type</h4>
+						</div>
+						<div className='col-lg-3'>
+							<button type='button' class='btn btn-outline-info'>
+								Semi-furnished
+							</button>
+						</div>
+						<div className='col-lg-3'>
+							<button type='button' class='btn btn-outline-info'>
+								Fully-furnished
+							</button>
+						</div>
+					</div>
 					<div style={{ padding: 10 }} className='row'>
-						<div className='col-sm-3'>
+						<div className='col-sm-3 col-lg-3'>
 							<div className='animated sharing'>
 								<p>1 bhk</p>
 								<p>Rs.4,999/- onwards</p>
@@ -166,202 +180,42 @@ function FlatDetail() {
 								<p>Rs.4,999/- onwards</p>
 							</div>
 						</div>
-						<div className='col-sm-6'>
+						<div className='col-sm-6 col-lg-8'>
 							<div className='row'>
 								<div className='col-md-12 col-xl-4'>
 									<div className='rm-num-container'>
-										<p>Room 1</p>
+										<p>Flat No. </p>
+										<p>102</p>
 									</div>
 								</div>
 								<div className='col-md-12 col-xl-4'>
 									<div className='rm-num-container'>
-										<p>Room 2</p>
-										<div
-											style={{ marginLeft: "auto", marginRight: "auto" }}
-											className='row'
-										>
-											<div className='col col-md-4'>
-												<div class='custom-control custom-checkbox '>
-													<input
-														// name='custom-checkbox-1'
-														class='custom-control-input'
-														id='room21'
-														type='checkbox'
-													/>
-													<label
-														class='custom-control-label'
-														for='room21'
-													></label>
-												</div>
-											</div>
-											<div className='col col-md-4'>
-												{/* <div className='rm-num-color-active'></div> */}
-												<div class='custom-control custom-checkbox '>
-													<input
-														// name='custom-checkbox-1'
-														class='custom-control-input'
-														id='room22'
-														type='checkbox'
-													/>
-													<label
-														class='custom-control-label'
-														for='room22'
-													></label>
-												</div>
-											</div>
-										</div>
+										<p>Flat No. </p>
+										<p>105</p>
 									</div>
 								</div>
 								<div className='col-md-12 col-xl-4'>
 									<div className='rm-num-container'>
-										<p>Room 3</p>
-										<div
-											style={{ marginLeft: "auto", marginRight: "auto" }}
-											className='row'
-										>
-											<div className='col col-md-4'>
-												<div class='custom-control custom-checkbox '>
-													<input
-														// name='custom-checkbox-1'
-														class='custom-control-input'
-														id='room31'
-														type='checkbox'
-													/>
-													<label
-														class='custom-control-label'
-														for='room31'
-													></label>
-												</div>
-											</div>
-											<div className='col col-md-4'>
-												<div class='custom-control custom-checkbox '>
-													<input
-														// name='custom-checkbox-1'
-														class='custom-control-input'
-														id='room32'
-														type='checkbox'
-													/>
-													<label
-														class='custom-control-label'
-														for='room32'
-													></label>
-												</div>
-											</div>
-										</div>
+										<p>Flat No. </p>
+										<p>301</p>
 									</div>
 								</div>
 								<div className='col-md-12 col-xl-4'>
 									<div className='rm-num-container'>
-										<p>Room 4</p>
-										<div
-											style={{ marginLeft: "auto", marginRight: "auto" }}
-											className='row'
-										>
-											<div className='col col-md-4'>
-												<div class='custom-control custom-checkbox '>
-													<input
-														// name='custom-checkbox-1'
-														class='custom-control-input'
-														id='room41'
-														type='checkbox'
-													/>
-													<label
-														class='custom-control-label'
-														for='room41'
-													></label>
-												</div>
-											</div>
-											<div className='col col-md-4'>
-												<div class='custom-control custom-checkbox '>
-													<input
-														// name='custom-checkbox-1'
-														class='custom-control-input'
-														id='room42'
-														type='checkbox'
-													/>
-													<label
-														class='custom-control-label'
-														for='room42'
-													></label>
-												</div>
-											</div>
-										</div>
+										<p>Flat No. </p>
+										<p>401</p>
 									</div>
 								</div>
 								<div className='col-md-12 col-xl-4'>
 									<div className='rm-num-container'>
-										<p>Room 5</p>
-										<div
-											style={{ marginLeft: "auto", marginRight: "auto" }}
-											className='row'
-										>
-											<div className='col col-md-4'>
-												<div class='custom-control custom-checkbox '>
-													<input
-														// name='custom-checkbox-1'
-														class='custom-control-input'
-														id='room51'
-														type='checkbox'
-													/>
-													<label
-														class='custom-control-label'
-														for='room51'
-													></label>
-												</div>
-											</div>
-											<div className='col col-md-4'>
-												<div class='custom-control custom-checkbox '>
-													<input
-														// name='custom-checkbox-1'
-														class='custom-control-input'
-														id='room52'
-														type='checkbox'
-													/>
-													<label
-														class='custom-control-label'
-														for='room52'
-													></label>
-												</div>
-											</div>
-										</div>
+										<p>Flat No. </p>
+										<p>403</p>
 									</div>
 								</div>
 								<div className='col-md-12 col-xl-4'>
 									<div className='rm-num-container'>
-										<p>Room 6</p>
-										<div
-											style={{ marginLeft: "auto", marginRight: "auto" }}
-											className='row'
-										>
-											<div className='col col-md-4'>
-												<div class='custom-control custom-checkbox '>
-													<input
-														// name='custom-checkbox-1'
-														class='custom-control-input'
-														id='room61'
-														type='checkbox'
-													/>
-													<label
-														class='custom-control-label'
-														for='room61'
-													></label>
-												</div>
-											</div>
-											<div className='col col-md-4'>
-												<div class='custom-control custom-checkbox '>
-													<input
-														// name='custom-checkbox-1'
-														class='custom-control-input'
-														id='room62'
-														type='checkbox'
-													/>
-													<label
-														class='custom-control-label'
-														for='room62'
-													></label>
-												</div>
-											</div>
-										</div>
+										<p>Flat No. </p>
+										<p>501</p>
 									</div>
 								</div>
 							</div>

@@ -1,0 +1,37 @@
+.sidenav {
+	height: 100%;
+	width: 0;
+	position: fixed;
+	z-index: 10000;
+	top: 0;
+	right: 0;
+	background-color: grey;
+	overflow-x: hidden;
+	padding-top: 20px;
+	transition: 0.5s;
+	border-top-left-radius: 40px;
+	border-bottom-left-radius: 40px;
+}
+
+.sidenav .closebtn {
+	position: absolute;
+	top: 0;
+	right: 25px;
+	font-size: 36px;
+	margin-left: 50px;
+}
+.sidnav-container {
+	padding: 20px;
+}
+.sidnav-container h3 {
+	color: #b83227;
+}
+.sidenav-content {
+	margin-top: 20px;
+}
+
+@media screen and (max-height: 450px) {
+	.sidenav {
+		padding-top: 15px;
+	}
+}

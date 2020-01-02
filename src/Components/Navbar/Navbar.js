@@ -1,152 +1,191 @@
 import React, { useState, useEffect } from "react";
+import "./Login.css";
 
-// Custom Imports
-import firebase from "../../firebase";
-
-const Navbar = () => {
-	const [isSignedIn, setSignIn] = useState(false);
-	const [user, setUser] = useState({});
-
-	const signInHandler = () => {
-		const provider = new firebase.auth.GoogleAuthProvider();
-		firebase
-			.auth()
-			.signInWithPopup(provider)
-			.then(function(result) {
-				if (result.user) {
-					setUser(user);
-					setSignIn(true);
-				} else {
-					setSignIn(false);
-				}
-			});
-	};
-
-	useEffect(() => {
-		firebase.auth().onAuthStateChanged(function(user) {
-			if (user) {
-				setUser(user);
-				setSignIn(true);
-			} else {
-				setSignIn(false);
-			}
-		});
-	});
-
+function Navbar() {
+	var x = window.matchMedia("(max-width: 700px)");
+	if (x.matches) {
+		var size = true;
+	}
+	const [hide, setHide] = useState("0px");
+	useEffect(() => {}, [hide]);
 	return (
-		<nav class='navbar navbar-expand-lg navbar-dark bg-primary '>
-			<div class='container'>
-				<a class='navbar-brand' href='#'>
-					<img style={{ marginRight: 10 }} src='assets/Santa_QS.png' />
-					Quickstay
-				</a>
-				<button
-					class='navbar-toggler'
-					type='button'
-					data-toggle='collapse'
-					data-target='#navbar-primary'
-					aria-controls='navbar-default'
-					aria-expanded='false'
-					aria-label='Toggle navigation'
-				>
-					<span class='navbar-toggler-icon'></span>
-				</button>
-				<div class='collapse navbar-collapse' id='navbar-primary'>
-					<div class='navbar-collapse-header'>
-						<div class='row'>
-							<div class='col-6 collapse-brand'>
-								<a href='index.html'>
-									<img src='assets/Santa_QS.png' />
-								</a>
-							</div>
-							<div class='col-6 collapse-close'>
-								<button
-									type='button'
-									class='navbar-toggler'
-									data-toggle='collapse'
-									data-target='#navbar-primary'
-									aria-controls='navbar-primary'
-									aria-expanded='false'
-									aria-label='Toggle navigation'
-								>
-									<span></span>
-									<span></span>
-								</button>
+		<div>
+			<nav class='navbar navbar-expand-lg navbar-dark bg-primary '>
+				<div class='container'>
+					<a class='navbar-brand' href='#'>
+						<img style={{ marginRight: 10 }} src='assets/Santa_QS.png' />
+						Quickstay
+					</a>
+					<button
+						class='navbar-toggler'
+						type='button'
+						data-toggle='collapse'
+						data-target='#navbar-primary'
+						aria-controls='navbar-default'
+						aria-expanded='false'
+						aria-label='Toggle navigation'
+					>
+						<span class='navbar-toggler-icon'></span>
+					</button>
+					<div class='collapse navbar-collapse' id='navbar-primary'>
+						<div class='navbar-collapse-header'>
+							<div class='row'>
+								<div class='col-6 collapse-brand'>
+									<a href='index.html'>
+										<img src='assets/Santa_QS.png' />
+									</a>
+								</div>
+								<div class='col-6 collapse-close'>
+									<button
+										type='button'
+										class='navbar-toggler'
+										data-toggle='collapse'
+										data-target='#navbar-primary'
+										aria-controls='navbar-primary'
+										aria-expanded='false'
+										aria-label='Toggle navigation'
+									>
+										<span></span>
+										<span></span>
+									</button>
+								</div>
 							</div>
 						</div>
-					</div>
 
-					<ul class='navbar-nav ml-lg-auto'>
-						<li class='nav-item'>
-							<a class='nav-link' href='#'>
-								Home
-								<span class='sr-only'>(current)</span>
-							</a>
-						</li>
-						<li class='nav-item'>
-							<a class='nav-link' href='#'>
-								About
-								<span class='sr-only'>(current)</span>
-							</a>
-						</li>
-						<li class='nav-item'>
-							<a class='nav-link' href='#'>
-								Blog
-								<span class='sr-only'>(current)</span>
-							</a>
-						</li>
-						<li class='nav-item'>
-							<a class='nav-link' href='#'>
-								Partner with us
-								<span class='sr-only'>(current)</span>
-							</a>
-						</li>
-						<li class='nav-item'>
-							{!isSignedIn ? (
-								<a class='nav-link' onClick={() => signInHandler()} href='#'>
+						<ul class='navbar-nav ml-lg-auto'>
+							<li class='nav-item'>
+								<a class='nav-link' href='#'>
+									Home
+									<span class='sr-only'>(current)</span>
+								</a>
+							</li>
+							<li class='nav-item'>
+								<a class='nav-link' href='#'>
+									About
+									<span class='sr-only'>(current)</span>
+								</a>
+							</li>
+							<li class='nav-item'>
+								<a class='nav-link' href='#'>
+									Blog
+									<span class='sr-only'>(current)</span>
+								</a>
+							</li>
+							<li class='nav-item'>
+								<a class='nav-link' href='#'>
+									Partner with us
+									<span class='sr-only'>(current)</span>
+								</a>
+							</li>
+							<li class='nav-item'>
+								<a
+									class='nav-link'
+									onClick={() => {
+										size ? setHide("100%") : setHide("40%");
+									}}
+									href='#'
+								>
 									Sign In
 									<span class='sr-only'>(current)</span>
 								</a>
-							) : (
-								<a class='nav-link' onClick={() => {}} href='#'>
-									{user.displayName}
-									<span class='sr-only'>(current)</span>
-								</a>
-							)}
-						</li>
-						{/* <li class='nav-item dropdown'>
-							<a
-								class='nav-link'
-								href='#'
-								id='navbar-primary_dropdown_1'
-								role='button'
-								data-toggle='dropdown'
-								aria-haspopup='true'
-								aria-expanded='false'
-							>
-								Settings
-							</a>
-							<div
-								class='dropdown-menu dropdown-menu-right'
-								aria-labelledby='navbar-default_dropdown_1'
-							>
-								<a class='dropdown-item' href='#'>
-									Action
-								</a>
-								<a class='dropdown-item' href='#'>
-									Another action
-								</a>
-								<div class='dropdown-divider'></div>
-								<a class='dropdown-item' href='#'>
-									Something else here
-								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</nav>
+			<div>
+				<div style={{ width: hide }} class='sidenav'>
+					<a
+						href='javascript:void(0)'
+						class='closebtn'
+						onClick={() => setHide("0px")}
+					>
+						&times;
+					</a>
+					<div className='sidnav-container'>
+						<h3 style={{ textAlign: "center" }}>Login</h3>
+						<div className='row '>
+							<div className='col-lg-12 sidenav-content'>
+								<div className='row'>
+									<div className='col-lg-4'>
+										<p>Phone No. </p>
+									</div>
+									<div className='col-lg-4'>
+										<input type='text' className='form-control' />
+									</div>
+									<div className='col-lg-4'>
+										<button className='btn btn-outline-primary'>
+											Send OTP
+										</button>
+									</div>
+								</div>
 							</div>
-						</li> */}
-					</ul>
+							<div className='col-lg-12 sidenav-content'>
+								<div className='row'>
+									<div className='col-lg-4'>
+										<p>OTP </p>
+									</div>
+									<div className='col-lg-6'>
+										<input type='number' className='form-control' />
+									</div>
+								</div>
+								<button className='btn btn-primary'>Login</button>
+							</div>
+							<div className='col-lg-12 sidenav-content'>
+								<p style={{ padding: 30, fontSize: "large" }}>
+									Don't have an account?.{" "}
+									<span style={{ color: "#b83227" }}>SIGN UP</span>
+								</p>
+								<div className='row'>
+									<div className='col-lg-4'>
+										<p>Full Name</p>
+									</div>
+									<div className='col-lg-6'>
+										<input type='text' className='form-control' />
+									</div>
+								</div>
+								<div style={{ marginTop: 10 }} className='row'>
+									<div className='col-lg-4'>
+										<p>Email</p>
+									</div>
+									<div className='col-lg-6'>
+										<input type='email' className='form-control' />
+									</div>
+								</div>
+								<div style={{ marginTop: 10 }} className='row'>
+									<div className='col-lg-4'>
+										<p>Phone No. </p>
+									</div>
+									<div className='col-lg-4'>
+										<input type='text' className='form-control' />
+									</div>
+									<div className='col-lg-4'>
+										<button className='btn btn-outline-primary'>
+											Send OTP
+										</button>
+									</div>
+								</div>
+								<div style={{ marginTop: 10 }} className='row'>
+									<div className='col-lg-4'>
+										<p>OTP </p>
+									</div>
+									<div className='col-lg-6'>
+										<input type='number' className='form-control' />
+									</div>
+								</div>
+							</div>
+							<div className='col-lg-12 sidenav-content'>
+								<button className='btn btn-primary'>Create Account</button>
+							</div>
+						</div>
+						<p style={{ textAlign: "center", marginTop: 30 }}>
+							By Creating an account, you accept our terms and conditions
+						</p>
+					</div>
 				</div>
 			</div>
-		</nav>
+		</div>
 	);
-};
+}
 
 export default Navbar;

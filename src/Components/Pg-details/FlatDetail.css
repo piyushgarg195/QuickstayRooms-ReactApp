@@ -95,7 +95,10 @@ body {
 	text-align: center;
 	border-radius: 10px;
 }
-
+.rm-num-container p {
+	margin: 0;
+	font-weight: 1000;
+}
 .rm-num-color {
 	border: 1px solid black;
 	height: 30px;
