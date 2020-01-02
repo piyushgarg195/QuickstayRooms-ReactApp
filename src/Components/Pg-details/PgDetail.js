@@ -5,6 +5,10 @@ import "./PgDetail.css";
 import Carousel from "../carousel/Carousel";
 
 function PgDetail() {
+	var x = window.matchMedia("(max-width: 700px)");
+	if (x.matches) {
+		var size = true;
+	}
 	return (
 		<div>
 			<div style={{ width: "100%" }} className=' row pg-det-container'>
@@ -71,7 +75,7 @@ function PgDetail() {
 					<div className='icons'>
 						<h3>Amenities</h3>
 						<div className='row'>
-							<div className='col-lg-4'>
+							<div className='col col-lg-4'>
 								<div className='row'>
 									<div className='col-sm-1'>
 										<i class='ni ni-atom'></i>
@@ -81,7 +85,7 @@ function PgDetail() {
 									</div>
 								</div>
 							</div>
-							<div className='col-lg-4'>
+							<div className='col col-lg-4'>
 								<div className='row'>
 									<div className='col-sm-1'>
 										<i class='ni ni-world-2'></i>
@@ -91,7 +95,17 @@ function PgDetail() {
 									</div>
 								</div>
 							</div>
-							<div className='col-lg-4'>
+							<div className='col col-lg-4'>
+								<div className='row'>
+									<div className='col-sm-1'>
+										<i class='ni ni-camera-compact'></i>
+									</div>
+									<div className='col-sm-1'>
+										<p>CCTV</p>
+									</div>
+								</div>
+							</div>
+							<div className='col col-lg-4'>
 								<div className='row'>
 									<div className='col-sm-1'>
 										<i class='ni ni-camera-compact'></i>
@@ -105,24 +119,37 @@ function PgDetail() {
 					</div>
 					{/* Amenities ends here */}
 					{/* Neighbourhood stats here */}
-					<div>
+					<div className='Neighbourhood'>
 						<h3>Neighbourhood</h3>
+						<p>
+							QuickStay is strategically placed nearby key office spaces and
+							access roads
+						</p>
 						<div className='row'>
-							<div className='col-lg-4'>
-								<p>
-									Hotel <label>500km away</label>
-								</p>
+							<div className='col-lg-4 nbr'>
+								<p>Hotel</p>
+								<span>500km away</span>
 							</div>
-							<div className='col-lg-4'>
-								<p>
-									Saloon <label>100km away</label>
-								</p>
+							<div className='col-lg-4 nbr'>
+								<p>Saloon</p>
+								<sapn>100km away</sapn>
+							</div>
+							<div className='col-lg-4 nbr'>
+								<p>Hospital</p>
+								<sapn>10km away</sapn>
+							</div>
+							<div className='col-lg-4 nbr'>
+								<p>Club</p>
+								<sapn>1m away</sapn>
 							</div>
 						</div>
 					</div>
 					{/* Neighbourhood ends here */}
 				</div>
-				<div style={{ marginTop: 10 }} className=' col-lg-6'>
+				<div
+					style={{ marginTop: 10 }}
+					className={size ? "col-lg-6" : "col-lg-6 fix-col"}
+				>
 					<h4>Room Type</h4>
 					<div style={{ padding: 10 }} className='row'>
 						<div className='col-sm-3'>
@@ -390,6 +417,28 @@ function PgDetail() {
 					</div>
 				</div>
 			</div>
+			<h2>FOOTER COMING SOON</h2>
+			<h2>FOOTER COMING SOON</h2>
+			<h2>FOOTER COMING SOON</h2>
+			<h2>FOOTER COMING SOON</h2>
+			<h2>FOOTER COMING SOON</h2>
+			<h2>FOOTER COMING SOON</h2>
+			<h2>FOOTER COMING SOON</h2>
+			<h2>FOOTER COMING SOON</h2>
+			<h2>FOOTER COMING SOON</h2>
+			<h2>FOOTER COMING SOON</h2>
+			<h2>FOOTER COMING SOON</h2>
+			<h2>FOOTER COMING SOON</h2>
+			<h2>FOOTER COMING SOON</h2>
+			<h2>FOOTER COMING SOON</h2>
+			<h2>FOOTER COMING SOON</h2>
+			<h2>FOOTER COMING SOON</h2>
+			<h2>FOOTER COMING SOON</h2>
+			<h2>FOOTER COMING SOON</h2>
+			<h2>FOOTER COMING SOON</h2>
+			<h2>FOOTER COMING SOON</h2>
+			<h2>FOOTER COMING SOON</h2>
+			<h2>FOOTER COMING SOON</h2>
 		</div>
 	);
 }

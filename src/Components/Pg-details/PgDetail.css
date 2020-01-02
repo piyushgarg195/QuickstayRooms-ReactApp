@@ -46,6 +46,29 @@ body {
 	border-image: initial;
 	margin: 0rem 1.42857rem 0rem 4.28571rem; */
 }
+
+.fix-col {
+	height: 10px;
+	position: sticky;
+	top: 0px;
+	right: 0px;
+}
+.icons {
+	background-color: #e9ecef;
+	padding: 10px;
+}
+.Neighbourhood {
+	background-color: #e9efff;
+	padding: 10px;
+}
+.Neighbourhood p {
+	font-style: italic;
+}
+.nbr p {
+	margin: 0;
+	font-weight: 1000;
+	font-style: normal;
+}
 .animated {
 	transition-duration: 0.2s;
 	transition-timing-function: ease-in-out;

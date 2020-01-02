@@ -29,21 +29,21 @@ function Carousel() {
 					<div class='carousel-item active'>
 						<img
 							class='d-block w-100'
-							src='../../assets/img/theme/img-1-1200x1000.jpg'
+							src='https://www.bookingholdings.com/wp-content/uploads/2018/01/booking_background.jpg'
 							alt='First slide'
 						/>
 					</div>
 					<div class='carousel-item'>
 						<img
 							class='d-block w-100'
-							src='../../assets/img/theme/img-2-1200x1000.jpg'
+							src='https://www.bookingholdings.com/wp-content/uploads/2018/01/booking_background.jpg'
 							alt='Second slide'
 						/>
 					</div>
 					<div class='carousel-item'>
 						<img
 							class='d-block w-100'
-							src='../../assets/img/theme/img-1-1200x1000.jpg'
+							src='https://www.bookingholdings.com/wp-content/uploads/2018/01/booking_background.jpg'
 							alt='Third slide'
 						/>
 					</div>
