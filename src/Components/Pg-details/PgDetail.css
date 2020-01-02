@@ -111,3 +111,30 @@ body {
 	margin-top: 5%;
 	padding: 10px;
 }
+
+/* modal styles  */
+.modalContent {
+	margin-top: 10px;
+}
+.radBtn {
+	padding: 5px;
+	position: relative;
+	/* padding-left: 20px; */
+}
+.radBtn input {
+	display: none;
+}
+.radBtn span {
+	padding: 3px;
+	border: 1px solid #ccc;
+	width: 100px;
+	position: absolute;
+	overflow: hidden;
+	line-height: 1;
+	text-align: center;
+	border-radius: 5px;
+}
+.radBtn input:checked + span {
+	background: #ccf;
+	border-color: #ccf;
+}

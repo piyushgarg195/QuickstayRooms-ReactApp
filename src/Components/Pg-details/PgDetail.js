@@ -404,7 +404,12 @@ function PgDetail() {
 					<div className='pg-btns'>
 						<div className='row'>
 							<div className='col col-md-6'>
-								<button type='button' class='btn btn-outline-danger'>
+								<button
+									type='button'
+									class='btn btn-outline-danger'
+									data-toggle='modal'
+									data-target='#exampleModal'
+								>
 									SCHEDULE A VISIT
 								</button>
 							</div>
@@ -439,6 +444,138 @@ function PgDetail() {
 			<h2>FOOTER COMING SOON</h2>
 			<h2>FOOTER COMING SOON</h2>
 			<h2>FOOTER COMING SOON</h2>
+			{/*  Modal starts here */}
+			<div
+				class='modal fade'
+				id='exampleModal'
+				tabindex='-1'
+				role='dialog'
+				aria-labelledby='exampleModalLabel'
+				aria-hidden='true'
+			>
+				<div class='modal-dialog modal-dialog-centered' role='document'>
+					<div class='modal-content'>
+						<div class='modal-header'>
+							<h5 class='modal-title' id='exampleModalLabel'>
+								SCHEDULE A VISIT
+							</h5>
+							<button
+								type='button'
+								class='close'
+								data-dismiss='modal'
+								aria-label='Close'
+							>
+								<span aria-hidden='true'>&times;</span>
+							</button>
+						</div>
+						<div class='modal-body'>
+							<div className='row'>
+								<div className='col-lg-12 modalContent'>
+									<div className='row'>
+										<div className='col-lg-4'>
+											<p>Flat Prefrence: </p>
+										</div>
+										<div className='col-lg-4'>
+											<button type='button' class='btn btn-outline-secondary'>
+												semi-furnished
+											</button>
+										</div>
+										<div className='col-lg-4'>
+											<button type='button' class='btn btn-outline-secondary'>
+												Fully-furnished
+											</button>
+										</div>
+									</div>
+								</div>
+								<div className='col-lg-12 modalContent'>
+									<div className='row'>
+										<div className='col-lg-4'>
+											<p>Arival Date: </p>
+										</div>
+										<div className='col-lg-4'>
+											<div class='form-group'>
+												<div class='input-group input-group-alternative'>
+													<div class='input-group-prepend'>
+														<span class='input-group-text'>
+															<i class='ni ni-calendar-grid-58'></i>
+														</span>
+													</div>
+													<input
+														class='form-control datepicker'
+														placeholder='Select date'
+														type='text'
+														value='06/20/2019'
+													/>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div className='col-lg-12 modalContent'>
+									<div className='row'>
+										<div className='col col-lg-4'>
+											<p>Arival Time Slot: </p>
+										</div>
+										<div className='col col-lg-6'>
+											<div className='row'>
+												<div className='col-sm-6 col-lg-6'>
+													<label className='radBtn'>
+														<input type='radio' name='select' />
+														<span>09AM-10AM</span>
+													</label>
+												</div>
+												<div className='col-sm-6 col-lg-6'>
+													<label className='radBtn'>
+														<input type='radio' name='select' />
+														<span>10AM-11AM</span>
+													</label>
+												</div>
+												<div className='col-sm-6 col-lg-6'>
+													<label className='radBtn'>
+														<input type='radio' name='select' />
+														<span>11AM-12PM</span>
+													</label>
+												</div>
+												<div className='col-sm-6 col-lg-6'>
+													<label className='radBtn'>
+														<input type='radio' name='select' />
+														<span>01PM-02PM</span>
+													</label>
+												</div>
+												<div className='col-sm-6 col-lg-6'>
+													<label className='radBtn'>
+														<input type='radio' name='select' />
+														<span>02PM-03PM</span>
+													</label>
+												</div>
+												<div className='col-sm-6 col-lg-6'>
+													<label className='radBtn'>
+														<input type='radio' name='select' />
+														<span>03PM-04PM</span>
+													</label>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class='modal-footer'>
+							<button
+								type='button'
+								class='btn btn-secondary'
+								data-dismiss='modal'
+							>
+								Close
+							</button>
+							<button type='button' class='btn btn-primary'>
+								Save changes
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			{/*  Modal ends here */}
 		</div>
 	);
 }
