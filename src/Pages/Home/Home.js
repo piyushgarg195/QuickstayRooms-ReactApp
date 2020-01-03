@@ -5,33 +5,21 @@ import React from "react";
 // import Form from "../../Components/Form/Form";
 import Search from "../../Components/search/search";
 import Navbar2 from "../../Components/Navbar/Navbar2";
+import HomeIcon from "../../Components/Home-icons/Home-icon";
 
 function Home() {
 	return (
 		<div>
-			{/* <Carousel /> */}
-			{/* <div
-				style={{
-					border: "1px solid grey",
-					width: "80%",
-					marginRight: "auto",
-					marginLeft: "auto",
-					padding: 20,
-					background: "#b83227",
-					color: "white",
-					position: "relative",
-					marginTop: "-3%"
-				}}
-			>
-				<Form />
-			</div> */}
-			<div>
-				<img
+			<div style={{ backgroundColor: "#b83227", width: "100%" }}>
+				{/* <img
 					style={{ position: "absolute", width: "100%", height: "80%" }}
 					src='https://www.bookingholdings.com/wp-content/uploads/2018/01/booking_background.jpg'
-				></img>
+				></img> */}
 				<Navbar2 />
 				<Search />
+			</div>
+			<div style={{ width: "100%" }}>
+				<HomeIcon />
 			</div>
 		</div>
 	);

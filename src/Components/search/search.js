@@ -7,19 +7,24 @@ function Search() {
 			style={{
 				marginLeft: "auto",
 				marginRight: "auto",
-				width: "50%",
-				marginTop: "15%"
+				width: "90%",
+				marginTop: "5%"
 			}}
 		>
-			<div class='col-md-12'>
+			<div class='col-lg-6'>
+				<h2 style={{ color: "white" }}>LET US FIND YOU A COZY HOMESTAY.</h2>
 				<div class='form-group'>
 					<div class='input-group mb-4'>
-						<div class='input-group-prepend'>
-							<span class='input-group-text'>
-								<i class='ni ni-zoom-split-in'></i>
-							</span>
-						</div>
-						<input class='form-control' placeholder='Search' type='text' />
+						<div class='input-group-prepend'></div>
+						<input
+							style={{ borderRadius: 20 }}
+							class='form-control'
+							placeholder='Search a homestay nearby...'
+							type='text'
+						/>
+						<span class='input-group-text'>
+							<i class='ni ni-zoom-split-in'></i>
+						</span>
 					</div>
 				</div>
 			</div>
