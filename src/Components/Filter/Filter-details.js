@@ -5,8 +5,8 @@ function Filter() {
 	return (
 		<div>
 			<div className='filter-cotanier'>
-				<div style={{ width: "100%" }} className='row'>
-					<div className='col-sm-2'>
+				<div style={{ width: "100%" }} className='row rad'>
+					<div className='col-sm-3'>
 						<div class='form-group'>
 							<div class='input-group input-group-alternative'>
 								<div class='input-group-prepend'>
@@ -23,25 +23,25 @@ function Filter() {
 							</div>
 						</div>
 					</div>
-					<div className='col-sm-2'>
+					<div className='col-sm-3'>
 						<div className='form-group'>
-							<select className='form-control rad'>
+							<select className='form-control'>
 								<option>Boys</option>
 								<option>Girls</option>
 							</select>
 						</div>
 					</div>
-					<div className='col-sm-2'>
+					<div className='col-sm-3'>
 						<div className='form-group'>
-							<select className='form-control rad'>
+							<select className='form-control'>
 								<option>Food</option>
 								<option>No Food</option>
 							</select>
 						</div>
 					</div>
-					<div className='col-sm-2'>
+					<div className='col-sm-3'>
 						<div className='form-group'>
-							<select className='form-control rad'>
+							<select className='form-control'>
 								<option>Locality</option>
 							</select>
 						</div>
