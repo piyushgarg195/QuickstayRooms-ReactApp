@@ -1,0 +1,39 @@
+.pg-photo {
+	border: 1px solid black;
+	height: 300px;
+	width: 300px;
+}
+.pg-name {
+	margin-top: 10px;
+}
+.pg-name p {
+	margin: 0;
+	font-weight: 1000;
+}
+.det-form {
+	padding: 40px;
+}
+.det-form h6 {
+	font-weight: 1000;
+	color: black;
+}
+
+.save-btn {
+	margin-top: 10px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.right-side-container p {
+	margin: 0;
+}
+.refral {
+	margin-top: 10px;
+}
+.invoice {
+	margin-top: 30px;
+}
+.pay-now {
+	width: 70%;
+	margin-top: 50px;
+}

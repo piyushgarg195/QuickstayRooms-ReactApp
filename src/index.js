@@ -9,6 +9,7 @@ import Booking from "./Pages/Bookings/Booking";
 import Details from "./Pages/Details/Details";
 import Pg from "./Pages/PG/Pg";
 import Flat from "./Pages/PG/Flat";
+import Booknow from "./Pages/BookNow/BookNow";
 
 ReactDOM.render(
 	<BrowserRouter>
@@ -29,6 +30,9 @@ ReactDOM.render(
 				</Route>
 				<Route exact path='/flat'>
 					<Flat />
+				</Route>
+				<Route exact path='/book'>
+					<Booknow />
 				</Route>
 			</Switch>
 		</div>
