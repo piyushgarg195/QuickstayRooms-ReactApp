@@ -1,13 +1,154 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
+import "./Filter.css";
 
 function Filter() {
+	const [showfilter, setShowFilter] = useState(true);
+	useEffect(() => {}, [showfilter]);
 	return (
 		<div>
-			<form>
-				<div class='row'>
-					<div class='col-md-6'>
+			<div className='filter-title-container'>
+				<h2>
+					QuickStay,
+					<span
+						onClick={() => {
+							{
+								showfilter ? setShowFilter(false) : setShowFilter(true);
+							}
+							console.log(showfilter);
+						}}
+						className='tilte-city-name'
+					>
+						Chandigarh<i class='ni ni-bold-down'></i>
+					</span>
+				</h2>
+			</div>
+			<div
+				style={{ display: showfilter ? "" : "none" }}
+				className='filter-content-container animate'
+			>
+				<p>Select your preferred location: </p>
+				<div className='row'>
+					<div className='col col-lg-1'>
+						<button type='button' class='btn btn-outline-info'>
+							Sector 22
+						</button>
+					</div>
+					<div className='col col-lg-1'>
+						<button type='button' class='btn btn-outline-info'>
+							Sector 34
+						</button>
+					</div>
+					<div className='col col-lg-1'>
+						<button type='button' class='btn btn-outline-info'>
+							Sector 20
+						</button>
+					</div>
+				</div>
+				<p>Loking for: </p>
+				<div className='row'>
+					<div className='col col-lg-1'>
+						<div class='custom-control custom-radio'>
+							<input
+								name='custom-radio-1'
+								class='custom-control-input'
+								id='men'
+								type='radio'
+							/>
+							<label class='custom-control-label' for='men'>
+								Men
+							</label>
+						</div>
+					</div>
+					<div className='col col-lg-1'>
+						<div class='custom-control custom-radio'>
+							<input
+								name='custom-radio-1'
+								class='custom-control-input'
+								id='women'
+								type='radio'
+							/>
+							<label class='custom-control-label' for='women'>
+								Women
+							</label>
+						</div>
+					</div>
+					<div className='col col-lg-1'>
+						<div class='custom-control custom-radio'>
+							<input
+								name='custom-radio-1'
+								class='custom-control-input'
+								id='unisex'
+								type='radio'
+							/>
+							<label class='custom-control-label' for='unisex'>
+								Unisex
+							</label>
+						</div>
+					</div>
+				</div>
+				<p>Kind of Property</p>
+				<div className='row'>
+					<div className='col col-lg-1'>
+						<div class='custom-control custom-radio'>
+							<input
+								name='custom-radio-1'
+								class='custom-control-input'
+								id='Flat'
+								type='radio'
+							/>
+							<label class='custom-control-label' for='Flat'>
+								Flat
+							</label>
+						</div>
+					</div>
+					<div className='col col-lg-1'>
+						<div class='custom-control custom-radio'>
+							<input
+								name='custom-radio-1'
+								class='custom-control-input'
+								id='PG'
+								type='radio'
+							/>
+							<label class='custom-control-label' for='PG'>
+								PG
+							</label>
+						</div>
+					</div>
+				</div>
+				<p>Would you like to include Food?</p>
+				<div className='row'>
+					<div className='col col-lg-1'>
+						<div class='custom-control custom-radio'>
+							<input
+								name='custom-radio-1'
+								class='custom-control-input'
+								id='Yes'
+								type='radio'
+							/>
+							<label class='custom-control-label' for='Yes'>
+								Yes
+							</label>
+						</div>
+					</div>
+					<div className='col col-lg-1'>
+						<div class='custom-control custom-radio'>
+							<input
+								name='custom-radio-1'
+								class='custom-control-input'
+								id='No'
+								type='radio'
+							/>
+							<label class='custom-control-label' for='No'>
+								No
+							</label>
+						</div>
+					</div>
+				</div>
+
+				<p>When are you planning to move in? </p>
+				<div className='row'>
+					<div className='col-lg-2'>
 						<div class='form-group'>
-							<label style={{ color: "white" }}>Check-in</label>
 							<div class='input-group input-group-alternative'>
 								<div class='input-group-prepend'>
 									<span class='input-group-text'>
@@ -23,18 +164,8 @@ function Filter() {
 							</div>
 						</div>
 					</div>
-					<div class='col-md-6'>
-						<div class='form-group'>
-							<label style={{ color: "white" }}>Gender</label>
-							<select class='form-control'>
-								<option>Male</option>
-								<option>Female</option>
-								<option>Others</option>
-							</select>
-						</div>
-					</div>
 				</div>
-			</form>
+			</div>
 		</div>
 	);
 }

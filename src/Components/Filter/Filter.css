@@ -1,0 +1,29 @@
+.filter-title-container {
+	padding: 10px;
+}
+.filter-title-container h2 {
+	color: black;
+}
+.tilte-city-name {
+	color: #b83227;
+}
+.filter-content-container {
+	padding: 10px;
+	position: relative;
+	animation: animatetop 0.6s;
+}
+@keyframes animatetop {
+	from {
+		top: -300px;
+		opacity: 0;
+	}
+	to {
+		top: 0;
+		opacity: 1;
+	}
+}
+.filter-content-container p {
+	margin: 0;
+	font-size: large;
+	margin-top: 20px;
+}

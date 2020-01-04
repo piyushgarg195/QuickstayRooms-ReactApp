@@ -8,6 +8,10 @@
 	/* margin-top: 20px; */
 	width: 40%;
 }
+.home-icon-text {
+	margin-top: auto;
+	margin-bottom: auto;
+}
 .home-icon-text p {
 	margin: 0 auto;
 	width: 50%;
