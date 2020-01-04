@@ -1,3 +1,12 @@
+.cancel-filter {
+	position: absolute;
+	right: 25px;
+	top: 70px;
+	color: #b83227 !important;
+	font-size: 50px;
+	font-weight: 1000;
+	margin-left: 50px;
+}
 .filter-title-container {
 	padding: 10px;
 }

@@ -6,19 +6,23 @@ function Filter() {
 	useEffect(() => {}, [showfilter]);
 	return (
 		<div>
+			<a href='/' className='cancel-filter'>
+				&times;
+			</a>
 			<div className='filter-title-container'>
 				<h2>
 					QuickStay,
-					<span
-						onClick={() => {
-							{
-								showfilter ? setShowFilter(false) : setShowFilter(true);
-							}
-							console.log(showfilter);
-						}}
-						className='tilte-city-name'
-					>
-						Chandigarh<i class='ni ni-bold-down'></i>
+					<span className='tilte-city-name'>
+						Chandigarh
+						<i
+							onClick={() => {
+								{
+									showfilter ? setShowFilter(false) : setShowFilter(true);
+								}
+								console.log(showfilter);
+							}}
+							class='ni ni-bold-down'
+						></i>
 					</span>
 				</h2>
 			</div>
