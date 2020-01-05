@@ -5,23 +5,32 @@
 	z-index: 10000;
 	top: 0;
 	right: 0;
-	background-color: grey;
+	background-color: #f2f2f2;
 	overflow-x: hidden;
 	padding-top: 20px;
-	transition: 0.5s;
-	border-top-left-radius: 40px;
-	border-bottom-left-radius: 40px;
+	transition: 0.1s;
 }
 
 .sidenav .closebtn {
 	position: absolute;
 	top: 0;
-	right: 25px;
+	right: 0;
+	padding: 5px;
 	font-size: 36px;
 	margin-left: 50px;
+	color: white;
+	background-color: #b83227;
+	width: 30px;
+	height: 100%;
+	margin-left: 5px;
+}
+@media screen and (max-width: 768px) {
+	.sidenav .closebtn {
+		height: 150%;
+	}
 }
 .sidnav-container {
-	padding: 20px;
+	padding: 30px;
 }
 .sidnav-container h3 {
 	color: #b83227;

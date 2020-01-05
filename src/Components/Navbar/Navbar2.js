@@ -97,7 +97,7 @@ const Navbar2 = () => {
 			</nav>
 			{/* login bar */}
 			<div>
-				<div style={{ width: hide }} class='sidenav'>
+				<div style={{ width: hide, opacity: 1 }} class='sidenav'>
 					<a
 						href='javascript:void(0)'
 						class='closebtn'
@@ -113,10 +113,10 @@ const Navbar2 = () => {
 									<div className='col-lg-4'>
 										<p>Phone No. </p>
 									</div>
-									<div className='col-lg-4'>
+									<div className='col col-lg-4'>
 										<input type='text' className='form-control' />
 									</div>
-									<div className='col-lg-4'>
+									<div className='col col-lg-4'>
 										<button className='btn btn-outline-primary'>
 											Send OTP
 										</button>
@@ -128,15 +128,20 @@ const Navbar2 = () => {
 									<div className='col-lg-4'>
 										<p>OTP </p>
 									</div>
-									<div className='col-lg-6'>
+									<div className=' col-lg-6'>
 										<input type='number' className='form-control' />
 									</div>
 								</div>
-								<button className='btn btn-primary'>Login</button>
 							</div>
+							<button
+								style={{ margin: "0 auto", marginTop: 20 }}
+								className='btn btn-primary'
+							>
+								Login
+							</button>
 							<div className='col-lg-12 sidenav-content'>
-								<p style={{ padding: 30, fontSize: "large" }}>
-									Don't have an account?.{" "}
+								<p style={{ fontSize: "large" }}>
+									Don't have an account?.
 									<span style={{ color: "#b83227" }}>SIGN UP</span>
 								</p>
 								<div className='row'>
@@ -159,10 +164,10 @@ const Navbar2 = () => {
 									<div className='col-lg-4'>
 										<p>Phone No. </p>
 									</div>
-									<div className='col-lg-4'>
+									<div className='col col-lg-4'>
 										<input type='text' className='form-control' />
 									</div>
-									<div className='col-lg-4'>
+									<div className='col col-lg-4'>
 										<button className='btn btn-outline-primary'>
 											Send OTP
 										</button>
@@ -177,9 +182,13 @@ const Navbar2 = () => {
 									</div>
 								</div>
 							</div>
-							<div className='col-lg-12 sidenav-content'>
-								<button className='btn btn-primary'>Create Account</button>
-							</div>
+
+							<button
+								style={{ margin: "0 auto", marginTop: 20 }}
+								className='btn btn-primary'
+							>
+								Create Account
+							</button>
 						</div>
 						<p style={{ textAlign: "center", marginTop: 30 }}>
 							By Creating an account, you accept our terms and conditions
