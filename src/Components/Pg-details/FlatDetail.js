@@ -11,43 +11,45 @@ function FlatDetail() {
 	}
 	return (
 		<div>
-			<div style={{ width: "100%" }} className=' row pg-det-container'>
-				<div className=' col-lg-6'>
-					<div className='pg-img-container'>
-						<div className='pg-img'>
+			<div style={{ width: "100%" }} className=' row flat-det-container'>
+				<div style={{ backgroundColor: "#e9efff" }} className=' col-lg-6'>
+					<div className='flat-img-container'>
+						<div className='flat-img'>
 							<Carousel />
 						</div>
-						<div className='row'>
-							<div className='col col-md-4 col-xl-3 pg-texts'>
-								{/* <p>Exterior</p> */}
+						<div
+							style={{
+								marginTop: 10,
+								marginBottom: 10
+							}}
+							className='row'
+						>
+							<div className='col col-md-3 col-lg-4 col-xl-2 flat-texts'>
 								<button type='button' class='btn btn-outline-default'>
 									Exterior
 								</button>
 							</div>
-							<div className='col col-md-4 col-xl-3 pg-texts'>
-								{/* <p>Private</p> */}
+							<div className='col col-md-3 col-lg-4 col-xl-2 flat-texts'>
 								<button type='button' class='btn btn-outline-default'>
 									Private
 								</button>
 							</div>
-							<div className='col col-md-3 col-xl-3 pg-texts'>
-								{/* <p>Two sharing</p> */}
+							<div className='col col-md-3 col-lg-4 col-xl-2 flat-texts'>
 								<button type='button' class='btn btn-outline-default'>
-									1 bhk
+									1bhk
 								</button>
 							</div>
-							<div className='col col-md-4 col-xl-3 pg-texts'>
-								{/* <p>Interior</p> */}
+							<div className='col col-md-3 col-lg-4 col-xl-2 flat-texts'>
 								<button type='button' class='btn btn-outline-default'>
-									2 bhk
+									2bhk
 								</button>
 							</div>
 						</div>
 					</div>
-					{/* pg specs container starts here */}
-					<div>
+					{/* flat specs container starts here */}
+					<div className='flat-room-det-container'>
 						<h3>Rooms Details</h3>
-						<div id='pg-specs' className='row'>
+						<div id='flat-specs' className='row'>
 							<div className='col col-lg-4 room-det'>
 								<h4 style={{ color: "black" }}>
 									<i>Private room</i>
@@ -70,9 +72,9 @@ function FlatDetail() {
 							</div>
 						</div>
 					</div>
-					{/* pg details container ends here */}
+					{/* flat details container ends here */}
 					{/* Amenities starts here */}
-					<div className='icons'>
+					<div className='flat-icons'>
 						<h3>Amenities</h3>
 						<div className='row'>
 							<div className='col col-lg-4'>
@@ -119,26 +121,26 @@ function FlatDetail() {
 					</div>
 					{/* Amenities ends here */}
 					{/* Neighbourhood stats here */}
-					<div className='Neighbourhood'>
+					<div className='flat-Neighbourhood-container'>
 						<h3>Neighbourhood</h3>
 						<p>
 							QuickStay is strategically placed nearby key office spaces and
 							access roads
 						</p>
 						<div className='row'>
-							<div className='col-lg-4 nbr'>
+							<div className='col-lg-4 flat-nbr'>
 								<p>Hotel</p>
 								<span>500km away</span>
 							</div>
-							<div className='col-lg-4 nbr'>
+							<div className='col-lg-4 flat-nbr'>
 								<p>Saloon</p>
 								<sapn>100km away</sapn>
 							</div>
-							<div className='col-lg-4 nbr'>
+							<div className='col-lg-4 flat-nbr'>
 								<p>Hospital</p>
 								<sapn>10km away</sapn>
 							</div>
-							<div className='col-lg-4 nbr'>
+							<div className='col-lg-4 flat-nbr'>
 								<p>Club</p>
 								<sapn>1m away</sapn>
 							</div>
@@ -154,66 +156,66 @@ function FlatDetail() {
 						<div className='col-lg-4'>
 							<h4>Flat Type</h4>
 						</div>
-						<div className='col-lg-3'>
+						<div className='col col-lg-4'>
 							<button type='button' class='btn btn-outline-info'>
 								Semi-furnished
 							</button>
 						</div>
-						<div className='col-lg-3'>
+						<div className='col col-lg-4'>
 							<button type='button' class='btn btn-outline-info'>
 								Fully-furnished
 							</button>
 						</div>
 					</div>
 					<div style={{ padding: 10 }} className='row'>
-						<div className='col-sm-3 col-lg-3'>
-							<div className='animated sharing'>
+						<div className='col-sm-4'>
+							<div className='animated flat-sharing'>
 								<p>1 bhk</p>
 								<p>Rs.4,999/- onwards</p>
 							</div>
-							<div className='animated sharing'>
+							<div className='animated flat-sharing'>
 								<p>2 bhk</p>
 								<p>Rs.4,999/- onwards</p>
 							</div>
-							<div className='animated sharing'>
+							<div className='animated flat-sharing flat-sharing-active'>
 								<p>3 bhk</p>
 								<p>Rs.4,999/- onwards</p>
 							</div>
 						</div>
-						<div className='col-sm-6 col-lg-8'>
+						<div className='col-md-8'>
 							<div className='row'>
 								<div className='col-md-12 col-xl-4'>
-									<div className='rm-num-container'>
+									<div className='flat-rm-num-container'>
 										<p>Flat No. </p>
 										<p>102</p>
 									</div>
 								</div>
 								<div className='col-md-12 col-xl-4'>
-									<div className='rm-num-container'>
+									<div className='flat-rm-num-container'>
 										<p>Flat No. </p>
 										<p>105</p>
 									</div>
 								</div>
 								<div className='col-md-12 col-xl-4'>
-									<div className='rm-num-container'>
+									<div className='flat-rm-num-container'>
 										<p>Flat No. </p>
 										<p>301</p>
 									</div>
 								</div>
 								<div className='col-md-12 col-xl-4'>
-									<div className='rm-num-container'>
+									<div className='flat-rm-num-container'>
 										<p>Flat No. </p>
 										<p>401</p>
 									</div>
 								</div>
 								<div className='col-md-12 col-xl-4'>
-									<div className='rm-num-container'>
+									<div className='flat-rm-num-container'>
 										<p>Flat No. </p>
 										<p>403</p>
 									</div>
 								</div>
 								<div className='col-md-12 col-xl-4'>
-									<div className='rm-num-container'>
+									<div className='flat-rm-num-container'>
 										<p>Flat No. </p>
 										<p>501</p>
 									</div>
@@ -221,7 +223,7 @@ function FlatDetail() {
 							</div>
 						</div>
 					</div>
-					<div className='pg-btns'>
+					<div className='flat-btns'>
 						<div className='row'>
 							<div className='col col-md-6'>
 								<button

@@ -12,32 +12,34 @@ function PgDetail() {
 	return (
 		<div>
 			<div style={{ width: "100%" }} className=' row pg-det-container'>
-				<div className=' col-lg-6'>
+				<div style={{ backgroundColor: "#e9efff" }} className=' col-lg-6'>
 					<div className='pg-img-container'>
 						<div className='pg-img'>
 							<Carousel />
 						</div>
-						<div className='row'>
-							<div className='col col-md-4 col-xl-3 pg-texts'>
-								{/* <p>Exterior</p> */}
+						<div
+							style={{
+								marginTop: 10,
+								marginBottom: 10
+							}}
+							className='row'
+						>
+							<div className='col col-md-3 col-lg-4 col-xl-2 pg-texts'>
 								<button type='button' class='btn btn-outline-default'>
 									Exterior
 								</button>
 							</div>
-							<div className='col col-md-4 col-xl-3 pg-texts'>
-								{/* <p>Private</p> */}
+							<div className='col col-md-3 col-lg-4 col-xl-2 pg-texts'>
 								<button type='button' class='btn btn-outline-default'>
 									Private
 								</button>
 							</div>
-							<div className='col col-md-3 col-xl-3 pg-texts'>
-								{/* <p>Two sharing</p> */}
+							<div className='col col-md-3 col-lg-4 col-xl-2 pg-texts'>
 								<button type='button' class='btn btn-outline-default'>
 									Two Sharing
 								</button>
 							</div>
-							<div className='col col-md-4 col-xl-3 pg-texts'>
-								{/* <p>Interior</p> */}
+							<div className='col col-md-3 col-lg-4 col-xl-2 pg-texts'>
 								<button type='button' class='btn btn-outline-default'>
 									Interior
 								</button>
@@ -45,24 +47,24 @@ function PgDetail() {
 						</div>
 					</div>
 					{/* pg specs container starts here */}
-					<div>
+					<div className='pg-room-det-container'>
 						<h3>Rooms Details</h3>
 						<div id='pg-specs' className='row'>
-							<div className='col col-lg-4 room-det'>
+							<div className='col col-lg-4 pg-room-det'>
 								<h4 style={{ color: "black" }}>
 									<i>Private room</i>
 								</h4>
 								<p>Rs.9999/per month</p>
 							</div>
 							<div className='hr'></div>
-							<div className='col col-lg-4 room-det'>
+							<div className='col col-lg-4 pg-room-det'>
 								<h4 style={{ color: "black" }}>
 									<i>Two room </i>
 								</h4>
 								<p>Rs.4999/per month</p>
 							</div>
 							<div className='hr'></div>
-							<div className='col col-lg-4 room-det'>
+							<div className='col col-lg-4 pg-room-det'>
 								<h4 style={{ color: "black" }}>
 									<i>Three room</i>
 								</h4>
@@ -72,7 +74,7 @@ function PgDetail() {
 					</div>
 					{/* pg details container ends here */}
 					{/* Amenities starts here */}
-					<div className='icons'>
+					<div className='pg-icons'>
 						<h3>Amenities</h3>
 						<div className='row'>
 							<div className='col col-lg-4'>
@@ -119,26 +121,26 @@ function PgDetail() {
 					</div>
 					{/* Amenities ends here */}
 					{/* Neighbourhood stats here */}
-					<div className='Neighbourhood'>
+					<div className='pg-Neighbourhood-container'>
 						<h3>Neighbourhood</h3>
 						<p>
 							QuickStay is strategically placed nearby key office spaces and
 							access roads
 						</p>
 						<div className='row'>
-							<div className='col-lg-4 nbr'>
+							<div className='col-lg-4 pg-nbr'>
 								<p>Hotel</p>
 								<span>500km away</span>
 							</div>
-							<div className='col-lg-4 nbr'>
+							<div className='col-lg-4 pg-nbr'>
 								<p>Saloon</p>
 								<sapn>100km away</sapn>
 							</div>
-							<div className='col-lg-4 nbr'>
+							<div className='col-lg-4 pg-nbr'>
 								<p>Hospital</p>
 								<sapn>10km away</sapn>
 							</div>
-							<div className='col-lg-4 nbr'>
+							<div className='col-lg-4 pg-nbr'>
 								<p>Club</p>
 								<sapn>1m away</sapn>
 							</div>
@@ -152,33 +154,30 @@ function PgDetail() {
 				>
 					<h4>Room Type</h4>
 					<div style={{ padding: 10 }} className='row'>
-						<div className='col-sm-3'>
-							<div className='animated sharing'>
-								<p>
-									Three Sharing <span>Rs.4,999/- onwards</span>
-								</p>
+						<div className='col-sm-4'>
+							<div className='animated pg-sharing'>
+								<p>Three Sharing</p>
+								<p>Rs.4,999/- onwards</p>
 							</div>
-							<div className='animated sharing'>
-								<p>
-									Two Sharing <span>Rs.4,999/- onwards</span>
-								</p>
+							<div className='animated pg-sharing pg-sharing-active'>
+								<p>Two Sharing</p>
+								<p>Rs.4,999/- onwards</p>
 							</div>
-							<div className='animated sharing'>
-								<p>
-									Three Sharing <span>Rs.4,999/- onwards</span>
-								</p>
+							<div className='animated pg-sharing'>
+								<p>Three Sharing</p>
+								<p>Rs.4,999/- onwards</p>
 							</div>
 						</div>
-						<div className='col-sm-6'>
+						<div className='col-md-8'>
 							<div className='row'>
 								<div className='col-md-12 col-xl-4'>
-									<div className='rm-num-container'>
+									<div className='pg-rm-num-container'>
 										<p>Room 1</p>
 										<div
 											style={{ marginLeft: "auto", marginRight: "auto" }}
 											className='row'
 										>
-											<div className='col col-md-4'>
+											<div className='col col-md-6 col-lg-6'>
 												<div class='custom-control custom-checkbox'>
 													<input
 														class='custom-control-input'
@@ -191,7 +190,7 @@ function PgDetail() {
 													></label>
 												</div>
 											</div>
-											<div className='col col-md-4'>
+											<div className='col col-md-6 col-lg-6'>
 												<div class='custom-control custom-checkbox'>
 													<input
 														class='custom-control-input'
@@ -208,13 +207,13 @@ function PgDetail() {
 									</div>
 								</div>
 								<div className='col-md-12 col-xl-4'>
-									<div className='rm-num-container'>
+									<div className='pg-rm-num-container'>
 										<p>Room 2</p>
 										<div
 											style={{ marginLeft: "auto", marginRight: "auto" }}
 											className='row'
 										>
-											<div className='col col-md-4'>
+											<div className='col col-md-4 col-lg-6'>
 												<div class='custom-control custom-checkbox '>
 													<input
 														// name='custom-checkbox-1'
@@ -228,8 +227,7 @@ function PgDetail() {
 													></label>
 												</div>
 											</div>
-											<div className='col col-md-4'>
-												{/* <div className='rm-num-color-active'></div> */}
+											<div className='col col-md-4 col-lg-6'>
 												<div class='custom-control custom-checkbox '>
 													<input
 														// name='custom-checkbox-1'
@@ -247,13 +245,13 @@ function PgDetail() {
 									</div>
 								</div>
 								<div className='col-md-12 col-xl-4'>
-									<div className='rm-num-container'>
+									<div className='pg-rm-num-container'>
 										<p>Room 3</p>
 										<div
 											style={{ marginLeft: "auto", marginRight: "auto" }}
 											className='row'
 										>
-											<div className='col col-md-4'>
+											<div className='col col-md-4 col-lg-6'>
 												<div class='custom-control custom-checkbox '>
 													<input
 														// name='custom-checkbox-1'
@@ -267,7 +265,7 @@ function PgDetail() {
 													></label>
 												</div>
 											</div>
-											<div className='col col-md-4'>
+											<div className='col col-md-4 col-lg-6'>
 												<div class='custom-control custom-checkbox '>
 													<input
 														// name='custom-checkbox-1'
@@ -285,13 +283,13 @@ function PgDetail() {
 									</div>
 								</div>
 								<div className='col-md-12 col-xl-4'>
-									<div className='rm-num-container'>
+									<div className='pg-rm-num-container'>
 										<p>Room 4</p>
 										<div
 											style={{ marginLeft: "auto", marginRight: "auto" }}
 											className='row'
 										>
-											<div className='col col-md-4'>
+											<div className='col col-md-4 col-lg-6'>
 												<div class='custom-control custom-checkbox '>
 													<input
 														// name='custom-checkbox-1'
@@ -305,7 +303,7 @@ function PgDetail() {
 													></label>
 												</div>
 											</div>
-											<div className='col col-md-4'>
+											<div className='col col-md-4 col-lg-6'>
 												<div class='custom-control custom-checkbox '>
 													<input
 														// name='custom-checkbox-1'
@@ -323,13 +321,13 @@ function PgDetail() {
 									</div>
 								</div>
 								<div className='col-md-12 col-xl-4'>
-									<div className='rm-num-container'>
+									<div className='pg-rm-num-container'>
 										<p>Room 5</p>
 										<div
 											style={{ marginLeft: "auto", marginRight: "auto" }}
 											className='row'
 										>
-											<div className='col col-md-4'>
+											<div className='col col-md-4 col-lg-6'>
 												<div class='custom-control custom-checkbox '>
 													<input
 														// name='custom-checkbox-1'
@@ -343,7 +341,7 @@ function PgDetail() {
 													></label>
 												</div>
 											</div>
-											<div className='col col-md-4'>
+											<div className='col col-md-4 col-lg-6'>
 												<div class='custom-control custom-checkbox '>
 													<input
 														// name='custom-checkbox-1'
@@ -361,13 +359,13 @@ function PgDetail() {
 									</div>
 								</div>
 								<div className='col-md-12 col-xl-4'>
-									<div className='rm-num-container'>
+									<div className='pg-rm-num-container'>
 										<p>Room 6</p>
 										<div
 											style={{ marginLeft: "auto", marginRight: "auto" }}
 											className='row'
 										>
-											<div className='col col-md-4'>
+											<div className='col col-md-4 col-lg-6'>
 												<div class='custom-control custom-checkbox '>
 													<input
 														// name='custom-checkbox-1'
@@ -381,7 +379,7 @@ function PgDetail() {
 													></label>
 												</div>
 											</div>
-											<div className='col col-md-4'>
+											<div className='col col-md-4 col-lg-6'>
 												<div class='custom-control custom-checkbox '>
 													<input
 														// name='custom-checkbox-1'
