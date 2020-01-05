@@ -21,6 +21,31 @@
 	position: relative;
 	animation: animatetop 0.6s;
 }
+.sector-btns {
+	margin-top: 10px;
+}
+
+.sector-rad-btns input {
+	display: none;
+}
+.sector-rad-btns span {
+	padding: 10px;
+	border: 1px solid #b83227;
+	width: 100px;
+	text-transform: uppercase;
+	position: absolute;
+	overflow: hidden;
+	line-height: 1;
+	text-align: center;
+	border-radius: 10px;
+}
+.sector-rad-btns input:checked + span {
+	opacity: 0.2;
+}
+
+.sector-btns input:checked {
+	background-color: violet;
+}
 @keyframes animatetop {
 	from {
 		top: -300px;
