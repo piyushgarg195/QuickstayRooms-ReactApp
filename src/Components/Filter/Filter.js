@@ -10,60 +10,70 @@ function Filter() {
 				&times;
 			</a>
 			<div className='filter-title-container'>
-				<h2>
-					QuickStay,
-					<span className='tilte-city-name'>
-						Chandigarh
-						<i
-							onClick={() => {
-								{
-									showfilter ? setShowFilter(false) : setShowFilter(true);
-								}
-								// console.log(showfilter);
-							}}
-							class='ni ni-bold-down'
-						></i>
-					</span>
-				</h2>
+				<h3>
+					Find QuickStay,
+					<span className='tilte-city-name'> Chandigarh</span>
+					<i
+						// onClick={() => {
+						// 	{
+						// 		showfilter ? setShowFilter(false) : setShowFilter(true);
+						// 	}
+						// 	console.log(showfilter);
+						// }}
+						class='ni ni-bold-down'
+					></i>
+				</h3>
 			</div>
 			<div className='filter-content-container animate'>
 				<div className='row'>
-					<div className='col-lg-8'>
+					<div className='col-lg-7'>
 						<p>Select your preferred location: </p>
 						<div style={{ padding: 20 }} className='row'>
-							<div className='col col-lg-2 sector-btns'>
+							<div className='col-sm-6 col-lg-2 sector-btns'>
 								<label className='sector-rad-btns'>
 									<input type='radio' name='sector 21' />
 									<span>sector 21</span>
 								</label>
 							</div>
-							<div className='col col-lg-2 sector-btns'>
+							<div className='col-sm-6 col-lg-2 sector-btns'>
 								<label className='sector-rad-btns'>
 									<input type='radio' name='sector 22' />
 									<span>sector 22</span>
 								</label>
 							</div>
-							<div className='col col-lg-2 sector-btns'>
+							<div className='col-sm-6 col-lg-2 sector-btns'>
 								<label className='sector-rad-btns'>
 									<input type='radio' name='sector 24' />
 									<span>sector 24</span>
 								</label>
 							</div>
-							<div className='col col-lg-2 sector-btns'>
+							<div className='col-sm-6 col-lg-2 sector-btns'>
 								<label className='sector-rad-btns'>
 									<input type='radio' name='sector 45' />
 									<span>sector 45</span>
 								</label>
 							</div>
-							<div className='col col-lg-2 sector-btns'>
+							<div className='col-sm-6 col-lg-2 sector-btns'>
 								<label className='sector-rad-btns'>
 									<input type='radio' name='sector 7' />
 									<span>sector 7</span>
 								</label>
 							</div>
+							<div className='col-sm-6 col-lg-2 sector-btns'>
+								<label className='sector-rad-btns'>
+									<input type='radio' name='sector 8' />
+									<span>sector 8</span>
+								</label>
+							</div>
+							<div className='col-sm-6 col-lg-2 sector-btns'>
+								<label className='sector-rad-btns'>
+									<input type='radio' name='sector 404' />
+									<span>sector 404</span>
+								</label>
+							</div>
 						</div>
 					</div>
-					<div className='col-lg-4'>
+					<div className='col-lg-5 right-side-filter'>
 						<p>Loking for: </p>
 						<div className='row'>
 							<div className='col col-lg-3'>
@@ -111,7 +121,7 @@ function Filter() {
 							<div className='col col-lg-3'>
 								<div class='custom-control custom-radio'>
 									<input
-										name='custom-radio-1'
+										name='custom-radio-2'
 										class='custom-control-input'
 										id='Flat'
 										type='radio'
@@ -124,7 +134,7 @@ function Filter() {
 							<div className='col col-lg-3'>
 								<div class='custom-control custom-radio'>
 									<input
-										name='custom-radio-1'
+										name='custom-radio-2'
 										class='custom-control-input'
 										id='PG'
 										type='radio'
@@ -140,7 +150,7 @@ function Filter() {
 							<div className='col col-lg-3'>
 								<div class='custom-control custom-radio'>
 									<input
-										name='custom-radio-1'
+										name='custom-radio-3'
 										class='custom-control-input'
 										id='Yes'
 										type='radio'
@@ -153,7 +163,7 @@ function Filter() {
 							<div className='col col-lg-3'>
 								<div class='custom-control custom-radio'>
 									<input
-										name='custom-radio-1'
+										name='custom-radio-3'
 										class='custom-control-input'
 										id='No'
 										type='radio'
@@ -185,7 +195,7 @@ function Filter() {
 								</div>
 							</div>
 						</div>
-						<div className='col-lg-12'>
+						<div className='col-lg-12 save-filter-btn'>
 							<button className='btn btn-primary'>SAVE</button>
 						</div>
 					</div>

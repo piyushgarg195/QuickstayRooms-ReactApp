@@ -10,8 +10,19 @@
 .filter-title-container {
 	padding: 10px;
 }
-.filter-title-container h2 {
+.filter-title-container h3 {
+	/* font-size: x-large; */
 	color: black;
+}
+@media screen and (max-width: 768px) {
+	.filter-title-container h3 {
+		font-size: x-large;
+	}
+}
+@media screen and (max-width: 320px) {
+	.filter-title-container h3 {
+		font-size: large;
+	}
 }
 .tilte-city-name {
 	color: #b83227;
@@ -22,7 +33,7 @@
 	animation: animatetop 0.6s;
 }
 .sector-btns {
-	margin-top: 10px;
+	margin-top: 20px;
 }
 
 .sector-rad-btns input {
@@ -40,12 +51,10 @@
 	border-radius: 10px;
 }
 .sector-rad-btns input:checked + span {
-	opacity: 0.2;
+	background-color: #b83227;
+	color: white;
 }
 
-.sector-btns input:checked {
-	background-color: violet;
-}
 @keyframes animatetop {
 	from {
 		top: -300px;
@@ -60,4 +69,10 @@
 	margin: 0;
 	font-size: large;
 	margin-top: 20px;
+}
+.right-side-filter p {
+	font-size: x-large;
+}
+.save-filter-btn {
+	margin-top: 50px;
 }
