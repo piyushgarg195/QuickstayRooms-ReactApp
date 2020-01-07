@@ -20,7 +20,9 @@ function FlatDetail() {
 						<div
 							style={{
 								marginTop: 10,
-								marginBottom: 10
+								marginBottom: 10,
+								display: "flex",
+								justifyContent: "center"
 							}}
 							className='row'
 						>

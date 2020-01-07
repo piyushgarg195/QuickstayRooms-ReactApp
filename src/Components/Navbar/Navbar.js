@@ -125,8 +125,8 @@ function Navbar() {
 									<div className='col-lg-4'>
 										<p>OTP </p>
 									</div>
-									<div className='col-lg-6'>
-										<input type='number' className='form-control' />
+									<div className='col-lg-6 input-respons-login'>
+										<input type='number' className='form-control ' />
 									</div>
 								</div>
 							</div>

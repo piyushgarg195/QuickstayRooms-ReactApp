@@ -97,7 +97,7 @@ const Navbar2 = () => {
 			</nav>
 			{/* login bar */}
 			<div>
-				<div style={{ width: hide, opacity: 1 }} class='sidenav'>
+				<div style={{ width: hide }} class='sidenav'>
 					<a
 						href='javascript:void(0)'
 						class='closebtn'
@@ -110,8 +110,8 @@ const Navbar2 = () => {
 						<div className='row '>
 							<div className='col-lg-12 sidenav-content'>
 								<div className='row'>
-									<div className='col-lg-3'>
-										<p>Phone No.</p>
+									<div className='col-lg-4'>
+										<p>Phone No. </p>
 									</div>
 									<div className='col col-lg-4'>
 										<input type='text' className='form-control' />
@@ -122,18 +122,19 @@ const Navbar2 = () => {
 										</button>
 									</div>
 								</div>
-								<div style={{ marginTop: 10 }} className='row'>
-									<div className='col-lg-3'>
+							</div>
+							<div className='col-lg-12 sidenav-content'>
+								<div className='row'>
+									<div className='col-lg-4'>
 										<p>OTP </p>
 									</div>
-									<div className='col-lg-5 input-respons-login'>
+									<div className='col-lg-6 input-respons-login'>
 										<input type='number' className='form-control' />
 									</div>
 								</div>
 							</div>
-
 							<button
-								style={{ margin: "0 auto", marginTop: 20 }}
+								style={{ margin: "0 auto", marginTop: 10 }}
 								className='btn btn-primary'
 							>
 								Login
@@ -144,23 +145,23 @@ const Navbar2 = () => {
 									<span style={{ color: "#b83227" }}>SIGN UP</span>
 								</p>
 								<div className='row'>
-									<div className='col-lg-3'>
+									<div className='col-lg-4'>
 										<p>Full Name</p>
 									</div>
-									<div className='col-lg-5 input-respons-login'>
+									<div className='col-lg-6 input-respons-login'>
 										<input type='text' className='form-control' />
 									</div>
 								</div>
 								<div style={{ marginTop: 10 }} className='row'>
-									<div className='col-lg-3'>
+									<div className='col-lg-4'>
 										<p>Email</p>
 									</div>
-									<div className='col-lg-5 input-respons-login'>
+									<div className='col-lg-6 input-respons-login'>
 										<input type='email' className='form-control' />
 									</div>
 								</div>
 								<div style={{ marginTop: 10 }} className='row'>
-									<div className='col-lg-3'>
+									<div className='col-lg-4'>
 										<p>Phone No. </p>
 									</div>
 									<div className='col col-lg-4'>
@@ -173,15 +174,14 @@ const Navbar2 = () => {
 									</div>
 								</div>
 								<div style={{ marginTop: 10 }} className='row'>
-									<div className='col-lg-3'>
+									<div className='col-lg-4'>
 										<p>OTP </p>
 									</div>
-									<div className='col-lg-5 input-respons-login'>
+									<div className='col-lg-6 input-respons-login'>
 										<input type='number' className='form-control' />
 									</div>
 								</div>
 							</div>
-
 							<button
 								style={{ margin: "0 auto", marginTop: 20 }}
 								className='btn btn-primary'
@@ -189,7 +189,7 @@ const Navbar2 = () => {
 								Create Account
 							</button>
 						</div>
-						<p style={{ textAlign: "center", marginTop: 30, marginRight: 20 }}>
+						<p style={{ textAlign: "center", marginTop: 30, marginRight: 10 }}>
 							By Creating an account, you accept our terms and conditions
 						</p>
 					</div>

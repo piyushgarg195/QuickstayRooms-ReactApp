@@ -20,7 +20,9 @@ function PgDetail() {
 						<div
 							style={{
 								marginTop: 10,
-								marginBottom: 10
+								marginBottom: 10,
+								display: "flex",
+								justifyContent: "center"
 							}}
 							className='row'
 						>
@@ -468,23 +470,6 @@ function PgDetail() {
 						</div>
 						<div class='modal-body'>
 							<div className='row'>
-								<div className='col-lg-12 modalContent'>
-									<div className='row'>
-										<div className='col-lg-4'>
-											<p>Flat Prefrence: </p>
-										</div>
-										<div className='col-lg-4'>
-											<button type='button' class='btn btn-outline-secondary'>
-												semi-furnished
-											</button>
-										</div>
-										<div className='col-lg-4'>
-											<button type='button' class='btn btn-outline-secondary'>
-												Fully-furnished
-											</button>
-										</div>
-									</div>
-								</div>
 								<div className='col-lg-12 modalContent'>
 									<div className='row'>
 										<div className='col-lg-4'>
