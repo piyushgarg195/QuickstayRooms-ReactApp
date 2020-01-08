@@ -10,6 +10,7 @@ import Details from "./Pages/Details/Details";
 import Pg from "./Pages/PG/Pg";
 import Flat from "./Pages/PG/Flat";
 import Booknow from "./Pages/BookNow/BookNow";
+import About from "./Pages/About/About";
 
 ReactDOM.render(
 	<BrowserRouter>
@@ -33,6 +34,9 @@ ReactDOM.render(
 				</Route>
 				<Route exact path='/book'>
 					<Booknow />
+				</Route>
+				<Route exact path='/about'>
+					<About />
 				</Route>
 			</Switch>
 		</div>
