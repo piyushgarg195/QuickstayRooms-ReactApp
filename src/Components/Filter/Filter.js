@@ -11,23 +11,27 @@ function Filter() {
 			</a>
 			<div className='filter-title-container'>
 				<h3>
-					Find QuickStay,
+					Find QuickStay in,
 					<span className='tilte-city-name'> Chandigarh</span>
 					<i
+						style={{ marginLeft: 10, color: "#a00500" }}
 						// onClick={() => {
 						// 	{
 						// 		showfilter ? setShowFilter(false) : setShowFilter(true);
 						// 	}
 						// 	console.log(showfilter);
 						// }}
-						class='ni ni-bold-down'
+						class='fa fa-chevron-down'
+						aria-hidden='true'
 					></i>
 				</h3>
 			</div>
 			<div className='filter-content-container animate'>
 				<div className='row'>
 					<div className='col-lg-7'>
-						<p>Select your preferred location: </p>
+						<p style={{ fontSize: "x-large" }}>
+							Select your preferred location:{" "}
+						</p>
 						<div style={{ padding: 20 }} className='row'>
 							<div className='col-sm-6 col-lg-2 sector-btns'>
 								<label className='sector-rad-btns'>
@@ -196,7 +200,7 @@ function Filter() {
 							</div>
 						</div>
 						<div className='col-lg-12 save-filter-btn'>
-							<button className='btn btn-primary'>SAVE</button>
+							<button className='btn btn-primary'>SAVE & CONTINUE</button>
 						</div>
 					</div>
 				</div>

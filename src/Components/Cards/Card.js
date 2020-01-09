@@ -13,7 +13,7 @@ function Card() {
 								<div>
 									<div className='card-add'>
 										<p>QS101</p>
-										<p>Sector 22</p>
+										<span>Sector 22</span>
 									</div>
 									<div className='card-price'>
 										<p>

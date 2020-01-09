@@ -106,11 +106,11 @@ const Navbar2 = () => {
 						&times;
 					</a>
 					<div className='sidnav-container'>
-						<h3 style={{ textAlign: "center" }}>Login</h3>
+						<h3 style={{ textAlign: "center", fontSize: "x-large" }}>LOGIN</h3>
 						<div className='row '>
 							<div className='col-lg-12 sidenav-content'>
 								<div className='row'>
-									<div className='col-lg-4'>
+									<div className='col-lg-3'>
 										<p>Phone No. </p>
 									</div>
 									<div className='col col-lg-4'>
@@ -122,10 +122,8 @@ const Navbar2 = () => {
 										</button>
 									</div>
 								</div>
-							</div>
-							<div className='col-lg-12 sidenav-content'>
-								<div className='row'>
-									<div className='col-lg-4'>
+								<div style={{ marginTop: 10 }} className='row'>
+									<div className='col-lg-3'>
 										<p>OTP </p>
 									</div>
 									<div className='col-lg-6 input-respons-login'>
@@ -133,19 +131,20 @@ const Navbar2 = () => {
 									</div>
 								</div>
 							</div>
+
 							<button
-								style={{ margin: "0 auto", marginTop: 10 }}
+								style={{ margin: "20px auto" }}
 								className='btn btn-primary'
 							>
 								Login
 							</button>
 							<div className='col-lg-12 sidenav-content'>
-								<p style={{ fontSize: "large" }}>
-									Don't have an account?.
-									<span style={{ color: "#b83227" }}>SIGN UP</span>
+								<p style={{ fontSize: "x-large", margin: "10px auto" }}>
+									New to QuickStay?
+									<span style={{ color: "#b83227" }}> SIGN UP</span>
 								</p>
 								<div className='row'>
-									<div className='col-lg-4'>
+									<div className='col-lg-3'>
 										<p>Full Name</p>
 									</div>
 									<div className='col-lg-6 input-respons-login'>
@@ -153,7 +152,7 @@ const Navbar2 = () => {
 									</div>
 								</div>
 								<div style={{ marginTop: 10 }} className='row'>
-									<div className='col-lg-4'>
+									<div className='col-lg-3'>
 										<p>Email</p>
 									</div>
 									<div className='col-lg-6 input-respons-login'>
@@ -161,7 +160,7 @@ const Navbar2 = () => {
 									</div>
 								</div>
 								<div style={{ marginTop: 10 }} className='row'>
-									<div className='col-lg-4'>
+									<div className='col-lg-3'>
 										<p>Phone No. </p>
 									</div>
 									<div className='col col-lg-4'>
@@ -174,7 +173,7 @@ const Navbar2 = () => {
 									</div>
 								</div>
 								<div style={{ marginTop: 10 }} className='row'>
-									<div className='col-lg-4'>
+									<div className='col-lg-3'>
 										<p>OTP </p>
 									</div>
 									<div className='col-lg-6 input-respons-login'>

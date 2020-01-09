@@ -54,3 +54,26 @@
 		padding-top: 15px;
 	}
 }
+
+#navbar-partition {
+	padding-left: 15px;
+	letter-spacing: 42px;
+	border: 0;
+	background-image: linear-gradient(
+		to left,
+		black 70%,
+		rgba(255, 255, 255, 0) 0%
+	);
+	-webkit-appearance: none;
+	background-position: bottom;
+	background-size: 50px 1px;
+	background-repeat: repeat-x;
+	background-position-x: 35px;
+	width: 220px;
+	background-color: transparent;
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+	-webkit-appearance: none;
+	margin: 0;
+}

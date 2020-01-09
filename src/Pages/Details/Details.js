@@ -20,21 +20,21 @@ function Details() {
 			<div>
 				<Navbar />
 			</div>
-			<div style={{ marginTop: 10 }}>{filter}</div>
+			<div>{filter}</div>
 			<div
-				style={{ width: "100%", margin: "0 auto", marginTop: 10 }}
+				style={{ width: "100%", margin: "0 auto", padding: "5px 20px" }}
 				className='row'
 			>
-				<div className='col-sm-3'>
+				<div style={{ padding: 0 }} className='col-sm-3'>
 					<Card />
 				</div>
-				<div className='col-sm-3'>
+				<div style={{ padding: 0 }} className='col-sm-3'>
 					<Card />
 				</div>
-				<div className='col-sm-3'>
+				<div style={{ padding: 0 }} className='col-sm-3'>
 					<Card />
 				</div>
-				<div className='col-sm-3'>
+				<div style={{ padding: 0 }} className='col-sm-3'>
 					<Card />
 				</div>
 			</div>

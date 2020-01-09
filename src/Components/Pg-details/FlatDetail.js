@@ -53,23 +53,17 @@ function FlatDetail() {
 						<h3>Rooms Details</h3>
 						<div id='flat-specs' className='row'>
 							<div className='col col-lg-4 room-det'>
-								<h4 style={{ color: "black" }}>
-									<i>Private room</i>
-								</h4>
+								<h4 style={{ color: "black" }}>Private room</h4>
 								<p>Rs.9999/per month</p>
 							</div>
 							<div className='hr'></div>
 							<div className='col col-lg-4 room-det'>
-								<h4 style={{ color: "black" }}>
-									<i>Two room </i>
-								</h4>
+								<h4 style={{ color: "black" }}>Two room</h4>
 								<p>Rs.4999/per month</p>
 							</div>
 							<div className='hr'></div>
 							<div className='col col-lg-4 room-det'>
-								<h4 style={{ color: "black" }}>
-									<i>Three room</i>
-								</h4>
+								<h4 style={{ color: "black" }}>Three room</h4>
 								<p>Rs.4999/per month</p>
 							</div>
 						</div>
@@ -154,19 +148,26 @@ function FlatDetail() {
 					style={{ marginTop: 10 }}
 					className={size ? "col-lg-6" : "col-lg-6 fix-col"}
 				>
-					<div className='row'>
+					<div style={{ padding: 10 }} className='row '>
 						<div className='col-lg-4'>
 							<h4>Flat Type</h4>
 						</div>
-						<div className='col col-lg-4'>
-							<button type='button' class='btn btn-outline-info'>
-								Semi-furnished
-							</button>
-						</div>
-						<div className='col col-lg-4'>
-							<button type='button' class='btn btn-outline-info'>
-								Fully-furnished
-							</button>
+						<div className='col-lg-8'>
+							<div
+								style={{ padding: "0 10px", float: "right" }}
+								className='row mr-auto ml-auto furnished-btns'
+							>
+								<div className='col-lg-6'>
+									<button type='button' class='btn btn-outline-info'>
+										Semi-furnished
+									</button>
+								</div>
+								<div className='col-lg-6'>
+									<button type='button' class='btn btn-outline-info'>
+										Fully-furnished
+									</button>
+								</div>
+							</div>
 						</div>
 					</div>
 					<div style={{ padding: 10 }} className='row'>
@@ -184,10 +185,13 @@ function FlatDetail() {
 								<p>Rs.4,999/- onwards</p>
 							</div>
 						</div>
-						<div className='col-md-8'>
+						<div className='col-md-8 flat-rm-num-container-container'>
 							<div className='row'>
 								<div className='col-md-12 col-xl-4'>
-									<div className='flat-rm-num-container'>
+									<div
+										style={{ backgroundColor: "#12cad6", color: "white" }}
+										className='flat-rm-num-container'
+									>
 										<p>Flat No. </p>
 										<p>102</p>
 									</div>

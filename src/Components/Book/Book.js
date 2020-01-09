@@ -10,16 +10,16 @@ function Book() {
 					<div className='row'>
 						<div className='col-lg-6'>
 							<div className='pg-photo'>
-								<p style={{ textAlign: "center", marginTop: 50 }}>PG PHOTOS</p>
+								{/* <p style={{ textAlign: "center", marginTop: 50 }}>PG PHOTOS</p> */}
 							</div>
 						</div>
 						<div className='col-lg-6'>
 							<div className='pg-name'>
-								<p>Abc PG</p>
+								<p style={{ fontWeight: 1000 }}>Abc PG</p>
 								<p>Abc marg, Xyz city </p>
 								<p>India-140603</p>
 								<hr></hr>
-								<p>Room Details</p>
+								<p style={{ fontWeight: 1000 }}>Room Details</p>
 								<p>2 sharing</p>
 								<p>Rs. 6,999/- onwards</p>
 								<a href='#'>Change</a>
@@ -27,13 +27,13 @@ function Book() {
 						</div>
 						{/* details from starts */}
 						<div className='col-lg-6 det-form'>
-							<h6>Details</h6>
+							<h4>DETAILS</h4>
 							<form className='form-group'>
 								<div style={{ marginTop: 10 }} className='row'>
-									<div className='col-lg-4'>
-										<p>Name: </p>
+									<div className='col-lg-6'>
+										<p style={{ marginTop: 8 }}>Name: </p>
 									</div>
-									<div className='col-lg-8'>
+									<div className='col-lg-6'>
 										<input
 											type='text'
 											className='form-control'
@@ -42,10 +42,10 @@ function Book() {
 									</div>
 								</div>
 								<div style={{ marginTop: 10 }} className='row'>
-									<div className='col-lg-4'>
-										<p>Phone No. </p>
+									<div className='col-lg-6'>
+										<p style={{ marginTop: 8 }}>Phone No. </p>
 									</div>
-									<div className='col-lg-8'>
+									<div className='col-lg-6'>
 										<input
 											type='number'
 											className='form-control'
@@ -54,10 +54,10 @@ function Book() {
 									</div>
 								</div>
 								<div style={{ marginTop: 10 }} className='row'>
-									<div className='col-lg-4'>
-										<p>Your Joining Data: </p>
+									<div className='col-lg-6'>
+										<p style={{ marginTop: 8 }}>Your Joining Data: </p>
 									</div>
-									<div className='col-lg-8'>
+									<div className='col-lg-6'>
 										<div class='form-group'>
 											<div class='input-group input-group-alternative'>
 												<div class='input-group-prepend'>
@@ -115,8 +115,11 @@ function Book() {
 				</div>
 				{/* left side page ends */}
 				{/* Right side page starts here */}
-				<div className='col-lg-6 right-side-container'>
-					<h2 style={{ textAlign: "center", color: "#b83227", marginTop: 10 }}>
+				<div
+					style={{ backgroundColor: "#e9efff" }}
+					className='col-lg-6 right-side-container'
+				>
+					<h2 style={{ textAlign: "center", color: "#6a92ff", marginTop: 10 }}>
 						TOKEN AMOUNT
 					</h2>
 					<div style={{ padding: 10 }}>
@@ -145,7 +148,16 @@ function Book() {
 							/>
 						</div>
 						<div className='col-lg-6'>
-							<button className='btn btn-outline-primary'>Apply</button>
+							<button
+								style={{
+									backgroundColor: "#6a92ff",
+									color: "white",
+									border: "none"
+								}}
+								className='btn btn-outline-primary'
+							>
+								Apply
+							</button>
 						</div>
 					</div>
 					<div className='refral row'>
@@ -157,7 +169,16 @@ function Book() {
 							/>
 						</div>
 						<div className='col-lg-6'>
-							<button className='btn btn-outline-primary'>Apply</button>
+							<button
+								style={{
+									backgroundColor: "#6a92ff",
+									color: "white",
+									border: "none"
+								}}
+								className='btn btn-outline-primary'
+							>
+								Apply
+							</button>
 						</div>
 					</div>
 					{/* refral ends here */}
@@ -190,7 +211,16 @@ function Book() {
 								</div>
 							</div>
 						</div>
-						<button className='btn btn-outline-primary pay-now'>PAY NOW</button>
+						<button
+							style={{
+								backgroundColor: "#6a92ff",
+								color: "white",
+								border: "none"
+							}}
+							className='btn btn-outline-primary pay-now'
+						>
+							PAY NOW
+						</button>
 					</div>
 					{/* INVOICE ENDS HERE */}
 				</div>

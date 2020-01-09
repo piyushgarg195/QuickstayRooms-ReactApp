@@ -35,11 +35,11 @@ body {
 	background-color: white;
 	margin-top: 10px;
 	margin-left: 10px;
-	padding: 10px;
-	border-radius: 10px;
-	-webkit-box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.75);
-	-moz-box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.75);
-	box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.75);
+	padding: 10px 20px;
+	border-radius: 5px;
+	-webkit-box-shadow: 0px 0px 8px 0px rgba(169, 169, 169, 1);
+	-moz-box-shadow: 0px 0px 8px 0px rgba(169, 169, 169, 1);
+	box-shadow: 0px 0px 8px 0px rgba(169, 169, 169, 1);
 }
 
 .fix-col {
@@ -50,23 +50,23 @@ body {
 }
 .pg-icons {
 	background-color: white;
-	padding: 10px;
+	padding: 10px 20px;
 	margin-top: 20px;
 	margin-left: 10px;
-	border-radius: 10px;
-	-webkit-box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.75);
-	-moz-box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.75);
-	box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.75);
+	border-radius: 5px;
+	-webkit-box-shadow: 0px 0px 8px 0px rgba(169, 169, 169, 1);
+	-moz-box-shadow: 0px 0px 8px 0px rgba(169, 169, 169, 1);
+	box-shadow: 0px 0px 8px 0px rgba(169, 169, 169, 1);
 }
 .pg-Neighbourhood-container {
 	background-color: white;
-	padding: 10px;
+	padding: 10px 20px;
 	margin-left: 10px;
 	margin-top: 20px;
-	border-radius: 10px;
-	-webkit-box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.75);
-	-moz-box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.75);
-	box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 0.75);
+	border-radius: 5px;
+	-webkit-box-shadow: 0px 0px 8px 0px rgba(169, 169, 169, 1);
+	-moz-box-shadow: 0px 0px 8px 0px rgba(169, 169, 169, 1);
+	box-shadow: 0px 0px 8px 0px rgba(169, 169, 169, 1);
 	margin-bottom: 10px;
 }
 .pg-Neighbourhood-container p {
@@ -82,9 +82,9 @@ body {
 	transition-timing-function: ease-in-out;
 }
 .pg-sharing {
-	-webkit-box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.75);
-	-moz-box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.75);
-	box-shadow: 0px 0px 5px 1px rgba(0, 0, 0, 0.75);
+	-webkit-box-shadow: 0px 0px 8px 0px rgba(169, 169, 169, 1);
+	-moz-box-shadow: 0px 0px 8px 0px rgba(169, 169, 169, 1);
+	box-shadow: 0px 0px 8px 0px rgba(169, 169, 169, 1);
 	padding: 5px;
 	border-radius: 5px;
 	margin-top: 10px;
@@ -98,12 +98,15 @@ body {
 	/* transform: scale(1.1); */
 	/* border-radius: 10px; */
 }
+.pg-rum-num-container-container {
+	padding: 0 40px;
+}
 .pg-rm-num-container {
 	/* border: 1px solid black; */
-	-webkit-box-shadow: 0px 0px 5px 1px rgba(184, 50, 39, 1);
-	-moz-box-shadow: 0px 0px 5px 1px rgba(184, 50, 39, 1);
-	box-shadow: 0px 0px 5px 1px rgba(184, 50, 39, 1);
-	margin-top: 10px;
+	-webkit-box-shadow: 0px 0px 8px 0px rgba(169, 169, 169, 1);
+	-moz-box-shadow: 0px 0px 8px 0px rgba(169, 169, 169, 1);
+	box-shadow: 0px 0px 8px 0px rgba(169, 169, 169, 1);
+	margin: 10px 0;
 	padding: 5px;
 	align-content: center;
 	text-align: center;

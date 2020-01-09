@@ -53,22 +53,20 @@ function PgDetail() {
 						<h3>Rooms Details</h3>
 						<div id='pg-specs' className='row'>
 							<div className='col col-lg-4 pg-room-det'>
-								<h4 style={{ color: "black" }}>
-									<i>Private room</i>
-								</h4>
+								<h4 style={{ color: "black" }}>Private room</h4>
 								<p>Rs.9999/per month</p>
 							</div>
 							<div className='hr'></div>
 							<div className='col col-lg-4 pg-room-det'>
 								<h4 style={{ color: "black" }}>
-									<i>Two room </i>
+									Two room 
 								</h4>
 								<p>Rs.4999/per month</p>
 							</div>
 							<div className='hr'></div>
 							<div className='col col-lg-4 pg-room-det'>
 								<h4 style={{ color: "black" }}>
-									<i>Three room</i>
+									Three room
 								</h4>
 								<p>Rs.4999/per month</p>
 							</div>
@@ -170,15 +168,12 @@ function PgDetail() {
 								<p>Rs.4,999/- onwards</p>
 							</div>
 						</div>
-						<div className='col-md-8'>
+						<div className='col-md-8 pg-rum-num-container-container'>
 							<div className='row'>
 								<div className='col-md-12 col-xl-4'>
 									<div className='pg-rm-num-container'>
 										<p>Room 1</p>
-										<div
-											style={{ marginLeft: "auto", marginRight: "auto" }}
-											className='row'
-										>
+										<div className='row ml-auto mr-auto'>
 											<div className='col col-md-6 col-lg-6'>
 												<div class='custom-control custom-checkbox'>
 													<input

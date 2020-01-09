@@ -9,6 +9,7 @@
 }
 .filter-title-container {
 	padding: 10px;
+	padding-left: 20px;
 }
 .filter-title-container h3 {
 	/* font-size: x-large; */
@@ -29,6 +30,7 @@
 }
 .filter-content-container {
 	padding: 10px;
+	padding-left: 20px;
 	position: relative;
 	animation: animatetop 0.6s;
 }
@@ -42,7 +44,7 @@
 .sector-rad-btns span {
 	padding: 10px;
 	border: 1px solid #b83227;
-	width: 100px;
+	width: 130px;
 	text-transform: uppercase;
 	position: absolute;
 	overflow: hidden;
@@ -70,9 +72,13 @@
 	font-size: large;
 	margin-top: 20px;
 }
+.right-side-filter {
+	/* margin-left: 5px; */
+	padding-left: 60px;
+}
 .right-side-filter p {
-	font-size: x-large;
+	font-size: large;
 }
 .save-filter-btn {
-	margin-top: 50px;
+	margin-top: 70px;
 }

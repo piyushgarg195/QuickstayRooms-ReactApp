@@ -1,27 +1,33 @@
 .pg-photo {
-	border: 1px solid black;
+	/* border: 1px solid black; */
 	height: 300px;
-	width: 300px;
+	width: 400px;
+	-webkit-box-shadow: 0px 0px 8px 0px rgba(169, 169, 169, 1);
+	-moz-box-shadow: 0px 0px 8px 0px rgba(169, 169, 169, 1);
+	box-shadow: 0px 0px 8px 0px rgba(169, 169, 169, 1);
+	margin-top: 10px;
+	margin-left: 10px;
 }
 .pg-name {
-	margin-top: 10px;
+	margin-top: 30px;
+	margin-left: 30px;
 }
 .pg-name p {
 	margin: 0;
-	font-weight: 1000;
+	/* font-weight: 1000; */
 }
 .det-form {
 	padding: 40px;
 }
-.det-form h6 {
+.det-form h4 {
 	font-weight: 1000;
 	color: black;
 }
 
 .save-btn {
-	margin-top: 10px;
-	margin-left: auto;
-	margin-right: auto;
+	margin-top: 50px;
+	margin-left: 70px;
+	width: 50%;
 }
 
 .right-side-container p {
@@ -35,5 +41,9 @@
 }
 .pay-now {
 	width: 70%;
+	display: flex;
+	justify-content: center;
 	margin-top: 50px;
+	margin-right: auto;
+	margin-left: auto;
 }
