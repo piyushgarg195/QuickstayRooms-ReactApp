@@ -3,55 +3,123 @@ import "./Home-icon.css";
 
 function HomeIcon() {
 	return (
-		<div
-			style={{
-				padding: 10
-				// margin: "0 auto"
-			}}
-		>
-			<div style={{ width: "100%" }} className='row icon-container'>
-				<div className='col-lg-5 home-icon'>
-					<img src='assets/homestay.png' />
+		<div>
+			<div
+				style={{ width: "100%" }}
+				className='home-findquickstay-container row'
+			>
+				<div className='col-lg-2 home-find-quickstay'>
+					<img src='assets/homeIcons/old-key.png'></img>
+					<p>Find QuickStay in</p>
 				</div>
-				<div className='col-lg-7 home-icon-text'>
-					<p style={{ fontSize: "large", textAlign: "center" }}>
-						HUNTING HOMESTAYS BECOMES EASY
-					</p>
-					<p>
-						Forget about going door to door. Find PG rooms right from the
-						comfort of your home. All you need to do is contact us through our
-						website and leave rest of the work for us!
-					</p>
+				<div className=' col-lg-10'>
+					<div className='row home-find-quickstay-city-container'>
+						<div className='col col-lg-2'>
+							<div className='home-find-quickstay-city-cards'>
+								<img src='assets/homeIcons/map.png'></img>
+								<p>Chandigarh</p>
+							</div>
+						</div>
+						<div className='col col-lg-2'>
+							<div className='home-find-quickstay-city-cards'>
+								<img src='assets/homeIcons/map.png'></img>
+								<p>Mohali</p>
+							</div>
+						</div>
+						<div className='col col-lg-2'>
+							<div className='home-find-quickstay-city-cards'>
+								<img src='assets/homeIcons/map.png'></img>
+								<p>Panchkula</p>
+							</div>
+						</div>
+						<div className='col col-lg-2'>
+							<div className='home-find-quickstay-city-cards'>
+								<img src='assets/homeIcons/map.png'></img>
+								<p>Zirakpur</p>
+							</div>
+						</div>
+						<div className='col col-lg-2'>
+							<div className='home-find-quickstay-city-cards'>
+								<img src='assets/homeIcons/map.png'></img>
+								<p>Ambala</p>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
-			<div style={{ width: "100%" }} className='row icon-container'>
-				<div className='col-lg-7 home-icon-text'>
-					<p style={{ fontSize: "large", textAlign: "center" }}>
-						QUALITY ASSURANCE
-					</p>
-					<p>
-						We value quality craftsmanship and apply strong checks throughout
-						the residence stay. You can be assured of reliable and fine-quality
-						furniture in your stays.
-					</p>
+			<div
+				style={{ width: "100%" }}
+				className='home-quickstay-icons-container row'
+			>
+				<div className='col-lg-2 home-quickstay-icons-text'>
+					<p id='home-quickstay-icons-text-p1'>QuickStay</p>
+					<p id='home-quickstay-icons-text-p2'>ha to sahi h</p>
 				</div>
-				<div className='col-lg-5 home-icon'>
-					<img src='assets/Quality.png' />
+				<div className=' col-lg-10'>
+					<div className='row'>
+						<div className='col-lg-4 home-quickstay-icons'>
+							<img src='assets/homeIcons/money-bag.png'></img>
+							<p>No Brokerage</p>
+							<span>Say bye-bye to </span>
+							<span>Heavy Brokage</span>
+						</div>
+						<div className='col-lg-4 home-quickstay-icons'>
+							<img src='assets/homeIcons/search home.png'></img>
+							<p>No Search Hassle</p>
+							<span>No need to wander</span>
+							<span>around in search</span>
+							<span>of a PG</span>
+						</div>
+						<div className='col-lg-4 home-quickstay-icons'>
+							<img src='assets/homeIcons/sofa.png'></img>
+							<p>Fully Furnished</p>
+							<span>Get cozy with</span>
+							<span>already installed</span>
+							<span>furniture</span>
+						</div>
+					</div>
 				</div>
 			</div>
-			<div style={{ width: "100%" }} className='row icon-container'>
-				<div className='col-lg-5 home-icon'>
-					<img src='assets/Pocket.png' />
+			<div
+				style={{ width: "100%" }}
+				className='home-quickstay-icons-container row'
+			>
+				<div className='col-lg-2 home-quickstay-icons-text'>
+					<p id='home-quickstay-icons-text-p1'>Stay ho to</p>
+					<p id='home-quickstay-icons-text-p2'>QuickStay jaisa</p>
 				</div>
-				<div className='col-lg-7 home-icon-text'>
-					<p style={{ fontSize: "large", textAlign: "center" }}>
-						POCKET FRIENDLY
-					</p>
-					<p>
-						You don't need a broker and his time to find you a suitable home
-						stay. QuickStay rooms are brokerage free! Opt for a private room or
-						get yourself a company with two/three sharing rooms.
-					</p>
+				<div className=' col-lg-10'>
+					<div className='row'>
+						<div className='col-lg-4 home-quickstay-icons'>
+							<img src='assets/homeIcons/pocket.png'></img>
+							<span>Pocket</span>
+							<span>Friendly</span>
+						</div>
+						<div className='col-lg-4 home-quickstay-icons'>
+							<img src='assets/homeIcons/wrench.png'></img>
+							<span>Well</span>
+							<span>Maintained</span>
+						</div>
+						<div className='col-lg-4 home-quickstay-icons'>
+							<img src='assets/homeIcons/water.png'></img>
+							<span>Water</span>
+							<span>Purify</span>
+						</div>
+						<div className='col-lg-4 home-quickstay-icons'>
+							<img src='assets/homeIcons/professions-and-jobs.png'></img>
+							<span>HouseKeeping</span>
+						</div>
+						<div className='col-lg-4 home-quickstay-icons'>
+							<img src='assets/homeIcons/fun.png'></img>
+							<span>Friendly</span>
+							<span>Aura</span>
+						</div>
+						<div className='col-lg-4 home-quickstay-icons'>
+							<img src='assets/homeIcons/customer-service.png'></img>
+							<span>Customer</span>
+							<span>Support</span>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>

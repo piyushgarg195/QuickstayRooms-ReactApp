@@ -1,18 +1,90 @@
-.icon-container {
-	margin-top: 5%;
+.home-findquickstay-container {
+	margin-top: 20px;
 }
-.home-icon img {
+.home-find-quickstay {
+	position: relative;
+	text-align: center;
+	color: black;
+}
+.home-find-quickstay img {
+	/* transform: rotate(deg); */
+	transform: scaleX(-1);
+}
+.home-find-quickstay p {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	/* right: 50%; */
+	width: 80px;
+	font-weight: 1000;
+	transform: translate(-50%, -50%);
+}
+.home-find-quickstay-city-cards {
+	margin: 10px auto;
+	width: 120px;
+	height: 120px;
+	border-radius: 10px;
+	padding: 10px;
+	-webkit-box-shadow: 0px 0px 8px 0px rgba(169, 169, 169, 1);
+	-moz-box-shadow: 0px 0px 8px 0px rgba(169, 169, 169, 1);
+	box-shadow: 0px 0px 8px 0px rgba(169, 169, 169, 1);
+}
+.home-find-quickstay-city-cards img {
 	display: block;
-	margin-left: auto;
-	margin-right: auto;
-	/* margin-top: 20px; */
-	width: 40%;
-}
-.home-icon-text {
-	margin-top: auto;
-	margin-bottom: auto;
-}
-.home-icon-text p {
 	margin: 0 auto;
 	width: 50%;
+}
+.home-find-quickstay-city-cards p {
+	text-align: center;
+	margin: 0;
+}
+.home-quickstay-icons-container {
+	margin-top: 5%;
+}
+.home-quickstay-icons-text {
+	background-color: yellow;
+	height: 30px;
+}
+#home-quickstay-icons-text-p1 {
+	height: 30px;
+	background-color: aqua;
+	position: relative;
+	top: 20px;
+	left: 30px;
+	font-weight: 1000;
+	text-align: center;
+}
+#home-quickstay-icons-text-p2 {
+	background-color: white;
+	position: relative;
+	top: 10px;
+	left: 30px;
+	font-weight: 1000;
+	text-align: center;
+}
+.home-quickstay-icons {
+	margin-top: 40px;
+	margin-bottom: 10px;
+	/* margin: 50px; */
+	/* padding: 50px; */
+}
+@media only screen and (max-width: 992px) {
+	.home-quickstay-icons {
+		margin-top: 80px;
+	}
+}
+.home-quickstay-icons img {
+	display: block;
+	margin: 0 auto;
+	width: 50px;
+	height: 50px;
+}
+.home-quickstay-icons p {
+	text-align: center;
+	margin: 0;
+	font-weight: 1000;
+}
+.home-quickstay-icons span {
+	display: table;
+	margin: 0 auto;
 }
