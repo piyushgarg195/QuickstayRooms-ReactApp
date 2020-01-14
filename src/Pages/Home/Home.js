@@ -6,6 +6,7 @@ import React from "react";
 import Search from "../../Components/search/search";
 import Navbar2 from "../../Components/Navbar/Navbar2";
 import HomeIcon from "../../Components/Home-icons/Home-icon";
+import Footer from "../../Components/Footer/Footer";
 
 function Home() {
 	return (
@@ -20,6 +21,9 @@ function Home() {
 			</div>
 			<div style={{ width: "100%" }}>
 				<HomeIcon />
+			</div>
+			<div style={{ marginTop: 20 }}>
+				<Footer />
 			</div>
 		</div>
 	);
