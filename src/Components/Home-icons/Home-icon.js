@@ -1,4 +1,6 @@
 import React from "react";
+import Scrolls from "../Scrolls/Scroll";
+import ScrollExperience from "../Scrolls/ScrollExperience";
 import "./Home-icon.css";
 
 function HomeIcon() {
@@ -13,7 +15,8 @@ function HomeIcon() {
 					<p>Find QuickStay in</p>
 				</div>
 				<div className=' col-lg-10'>
-					<div className='row home-find-quickstay-city-container'>
+					<Scrolls />
+					{/* <div className='row home-find-quickstay-city-container'>
 						<div className='col col-lg-2'>
 							<div className='home-find-quickstay-city-cards'>
 								<img src='assets/homeIcons/map.png'></img>
@@ -44,7 +47,7 @@ function HomeIcon() {
 								<p>Ambala</p>
 							</div>
 						</div>
-					</div>
+					</div> */}
 				</div>
 			</div>
 			<div
@@ -120,6 +123,18 @@ function HomeIcon() {
 							<span>Support</span>
 						</div>
 					</div>
+				</div>
+			</div>
+			<div
+				style={{ width: "100%" }}
+				className='home-quickstay-icons-container row'
+			>
+				<div className='col-lg-2 home-quickstay-icons-text'>
+					<p id='home-quickstay-icons-text-p1'>User</p>
+					<p id='home-quickstay-icons-text-p2'>Experience</p>
+				</div>
+				<div className=' col-lg-10'>
+					<ScrollExperience />
 				</div>
 			</div>
 		</div>

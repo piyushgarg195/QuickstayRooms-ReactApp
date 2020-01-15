@@ -1,0 +1,31 @@
+.menu-item {
+	margin: 10px 20px;
+	width: 140px;
+	height: 140px;
+	border-radius: 10px;
+	padding: 10px;
+	-webkit-box-shadow: 0px 0px 8px 0px rgba(169, 169, 169, 1);
+	-moz-box-shadow: 0px 0px 8px 0px rgba(169, 169, 169, 1);
+	box-shadow: 0px 0px 8px 0px rgba(169, 169, 169, 1);
+}
+.menu-item-wrapper.active {
+	border: 1px white solid;
+}
+.menu-item.active {
+	background-color: #b83227;
+}
+
+.scroll-menu-arrow {
+	padding: 20px;
+	cursor: pointer;
+}
+
+#home-find-quickstay-city-cards img {
+	display: block;
+	margin: 0 auto;
+	width: 50%;
+}
+#home-find-quickstay-city-cards p {
+	text-align: center;
+	margin: 0;
+}
