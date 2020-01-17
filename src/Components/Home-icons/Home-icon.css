@@ -88,3 +88,17 @@
 	display: table;
 	margin: 0 auto;
 }
+.home-getapp-container {
+	display: block;
+	margin-top: 50px;
+	margin-left: 40%;
+}
+@media only screen and (max-width: 992px) {
+	.home-getapp-container {
+		margin-top: 200px;
+		margin-left: 10%;
+	}
+}
+.home-getapp-container img {
+	width: 200px;
+}

@@ -133,8 +133,28 @@ function HomeIcon() {
 					<p id='home-quickstay-icons-text-p1'>User</p>
 					<p id='home-quickstay-icons-text-p2'>Experience</p>
 				</div>
-				<div className=' col-lg-10'>
+				<div style={{ marginTop: 50 }} className=' col-lg-10'>
 					<ScrollExperience />
+				</div>
+			</div>
+			<div
+				style={{ width: "100%" }}
+				className='home-quickstay-icons-container row'
+			>
+				<div className='col-lg-2 home-quickstay-icons-text'>
+					<p id='home-quickstay-icons-text-p1'>Get the</p>
+					<p id='home-quickstay-icons-text-p2'>QuickStay App</p>
+					<p style={{ textAlign: "center" }}>
+						Download the QuickStay App and get everything done! From booking
+						online to getting every update, make your life easier
+					</p>
+				</div>
+				<div className=' col-lg-10'>
+					<div className='home-getapp-container'>
+						<img src='assets/homeIcons/en_badge_web_generic.png'></img>
+						<img src='assets/homeIcons/download-on-app-store-png-download-1272.png'></img>
+						<img src='assets/homeIcons/iphone-iphone_x-_iphonex-mobile-apple-device-2-512.png'></img>
+					</div>
 				</div>
 			</div>
 		</div>
