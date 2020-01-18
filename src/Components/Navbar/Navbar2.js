@@ -194,6 +194,7 @@ const Navbar2 = () => {
 					</div>
 				</div>
 			</div>
+			{/* ends login bar */}
 		</div>
 	);
 };

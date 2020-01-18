@@ -1,0 +1,15 @@
+.myprofile-user-pic img {
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+	display: block;
+	margin-top: 10%;
+	margin-left: auto;
+	margin-right: auto;
+}
+.myprofile-user-details {
+	margin-top: 10%;
+}
+.myprofile-user-details p {
+	font-size: large;
+}

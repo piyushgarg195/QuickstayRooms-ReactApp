@@ -11,6 +11,7 @@ import Pg from "./Pages/PG/Pg";
 import Flat from "./Pages/PG/Flat";
 import Booknow from "./Pages/BookNow/BookNow";
 import About from "./Pages/About/About";
+import Profile from "./Pages/Profile/Profiles";
 
 ReactDOM.render(
 	<BrowserRouter>
@@ -37,6 +38,9 @@ ReactDOM.render(
 				</Route>
 				<Route exact path='/about'>
 					<About />
+				</Route>
+				<Route exact path='/profile'>
+					<Profile />
 				</Route>
 			</Switch>
 		</div>

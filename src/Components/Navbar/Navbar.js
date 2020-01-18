@@ -93,6 +93,7 @@ function Navbar() {
 					</div>
 				</div>
 			</nav>
+			{/* login bar */}
 			<div>
 				<div style={{ width: hide }} class='sidenav'>
 					<a
@@ -103,11 +104,11 @@ function Navbar() {
 						&times;
 					</a>
 					<div className='sidnav-container'>
-						<h3 style={{ textAlign: "center" }}>Login</h3>
+						<h3 style={{ textAlign: "center", fontSize: "x-large" }}>LOGIN</h3>
 						<div className='row '>
 							<div className='col-lg-12 sidenav-content'>
 								<div className='row'>
-									<div className='col-lg-4'>
+									<div className='col-lg-3'>
 										<p>Phone No. </p>
 									</div>
 									<div className='col col-lg-4'>
@@ -119,46 +120,45 @@ function Navbar() {
 										</button>
 									</div>
 								</div>
-							</div>
-							<div className='col-lg-12 sidenav-content'>
-								<div className='row'>
-									<div className='col-lg-4'>
+								<div style={{ marginTop: 10 }} className='row'>
+									<div className='col-lg-3'>
 										<p>OTP </p>
 									</div>
 									<div className='col-lg-6 input-respons-login'>
-										<input type='number' className='form-control ' />
+										<input type='number' className='form-control' />
 									</div>
 								</div>
 							</div>
+
 							<button
-								style={{ margin: "0 auto", marginTop: 10 }}
+								style={{ margin: "20px auto" }}
 								className='btn btn-primary'
 							>
 								Login
 							</button>
 							<div className='col-lg-12 sidenav-content'>
-								<p style={{ fontSize: "large" }}>
-									Don't have an account?.
-									<span style={{ color: "#b83227" }}>SIGN UP</span>
+								<p style={{ fontSize: "x-large", margin: "10px auto" }}>
+									New to QuickStay?
+									<span style={{ color: "#b83227" }}> SIGN UP</span>
 								</p>
 								<div className='row'>
-									<div className='col-lg-4'>
+									<div className='col-lg-3'>
 										<p>Full Name</p>
 									</div>
-									<div className='col-lg-6'>
+									<div className='col-lg-6 input-respons-login'>
 										<input type='text' className='form-control' />
 									</div>
 								</div>
 								<div style={{ marginTop: 10 }} className='row'>
-									<div className='col-lg-4'>
+									<div className='col-lg-3'>
 										<p>Email</p>
 									</div>
-									<div className='col-lg-6'>
+									<div className='col-lg-6 input-respons-login'>
 										<input type='email' className='form-control' />
 									</div>
 								</div>
 								<div style={{ marginTop: 10 }} className='row'>
-									<div className='col-lg-4'>
+									<div className='col-lg-3'>
 										<p>Phone No. </p>
 									</div>
 									<div className='col col-lg-4'>
@@ -171,10 +171,10 @@ function Navbar() {
 									</div>
 								</div>
 								<div style={{ marginTop: 10 }} className='row'>
-									<div className='col-lg-4'>
+									<div className='col-lg-3'>
 										<p>OTP </p>
 									</div>
-									<div className='col-lg-6'>
+									<div className='col-lg-6 input-respons-login'>
 										<input type='number' className='form-control' />
 									</div>
 								</div>
@@ -186,12 +186,13 @@ function Navbar() {
 								Create Account
 							</button>
 						</div>
-						<p style={{ textAlign: "center", marginTop: 30 }}>
+						<p style={{ textAlign: "center", marginTop: 30, marginRight: 10 }}>
 							By Creating an account, you accept our terms and conditions
 						</p>
 					</div>
 				</div>
 			</div>
+			{/* ends login bar */}
 		</div>
 	);
 }
