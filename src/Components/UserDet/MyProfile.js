@@ -5,6 +5,27 @@ import "./MyProfile.css";
 function MyProfile() {
 	return (
 		<div>
+			<h3 style={{ color: "black" }}>My Profile</h3>
+			<div className='row'>
+				<div className='col-lg-4'>
+					<a
+						href='#'
+						style={{
+							fontSize: "large",
+							color: "black",
+							borderBottom: "4px solid black"
+						}}
+					>
+						My Profile
+					</a>
+				</div>
+				<div className='col-lg-4'>
+					<a href='#' style={{ fontSize: "large", color: "black" }}>
+						Some more information
+					</a>
+				</div>
+			</div>
+			<hr style={{ margin: 0 }} />
 			<div className='row'>
 				<div className='col-lg-4 myprofile-user-pic'>
 					<img src='https://vignette.wikia.nocookie.net/characters/images/a/a5/Latest_%2810%29.jpg/revision/latest/scale-to-width-down/340?cb=20141230074301'></img>

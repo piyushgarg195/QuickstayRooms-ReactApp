@@ -1,10 +1,22 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 
 // custom componenets
 import MyProfile from "./MyProfile";
+import MyBookings from "./MyBookings";
 import "./UserPro.css";
 
 function UserPro() {
+	const [myprofile, setmyprofile] = useState(true);
+	const [mybookings, setmybookings] = useState(false);
+	const handelsetmyprofile = () => {
+		setmyprofile(true);
+		setmybookings(false);
+	};
+	const handelsetmybookings = () => {
+		setmyprofile(false);
+		setmybookings(true);
+	};
+	useEffect(() => {});
 	return (
 		<div>
 			<div style={{ width: "100%" }} className='row user-profile-container'>
@@ -14,38 +26,43 @@ function UserPro() {
 						<p>Hermione granger</p>
 					</div>
 					<div className='user-profile-left-links'>
-						<p>My Profile</p>
-						<p>My Bookings</p>
-						<p>Schedule a visit</p>
-						<p>Transaction history</p>
-						<p>LogOut</p>
+						<p style={{ borderLeft: myprofile ? "10px solid #12cad6" : "" }}>
+							<a href='#' onClick={() => handelsetmyprofile()}>
+								My Profile
+							</a>
+						</p>
+						<p style={{ borderLeft: mybookings ? "10px solid #12cad6" : "" }}>
+							<a href='#' onClick={() => handelsetmybookings()}>
+								My Bookings
+							</a>
+						</p>
+						<p>
+							<a href='#'>Schedule a visit</a>
+						</p>
+						<p>
+							<a href='#'>Transaction history</a>
+						</p>
+						<p>
+							<a href='#'>LogOut</a>
+						</p>
 					</div>
 				</div>
 				<div className='col-sm-12 col-lg-8 user-profile-right-container'>
-					<h3 style={{ color: "black" }}>My Profile</h3>
+					{/* <h3 style={{ color: "black" }}>My Profile</h3> */}
 					<div className='user-profile-right-content'>
-						<div className='row'>
-							<div className='col-lg-4'>
-								<a
-									href='#'
-									style={{
-										fontSize: "large",
-										color: "black",
-										borderBottom: "4px solid black"
-									}}
-								>
-									My Profile
-								</a>
-							</div>
-							<div className='col-lg-4'>
-								<a href='#' style={{ fontSize: "large", color: "black" }}>
-									Some more information
-								</a>
-							</div>
-						</div>
-						<hr style={{ margin: 0 }} />
-						<div>
+						<div
+							style={{
+								display: myprofile ? "" : "none"
+							}}
+						>
 							<MyProfile />
+						</div>
+						<div
+							style={{
+								display: mybookings ? "" : "none"
+							}}
+						>
+							<MyBookings />
 						</div>
 					</div>
 				</div>

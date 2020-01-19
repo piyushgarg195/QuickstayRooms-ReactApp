@@ -22,11 +22,14 @@
 	text-align: center;
 }
 .user-profile-left-links {
-	margin: 30px;
+	/* margin: 30px; */
 }
-.user-profile-left-links p {
-	margin: 20px;
+.user-profile-left-links a {
+	margin: 50px;
 	font-size: large;
+}
+.user-profile-left-links p a {
+	color: black;
 }
 .user-profile-right-container {
 	padding: 40px;
