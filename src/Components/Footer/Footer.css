@@ -1,12 +1,18 @@
 .footer-bg-img {
 	position: relative;
 	background-color: #ff3333;
+	/* height: 100%; */
 }
 
 #footer-bg-img-img {
 	width: 100%;
-	height: 400px;
+	height: 500px;
 	opacity: 0.4;
+}
+@media screen and (max-width: 993px) {
+	#footer-bg-img-img {
+		height: 800px;
+	}
 }
 .footer-bg-text {
 	position: absolute;
