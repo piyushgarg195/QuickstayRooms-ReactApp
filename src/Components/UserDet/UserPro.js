@@ -3,18 +3,27 @@ import React, { useState, useEffect } from "react";
 // custom componenets
 import MyProfile from "./MyProfile";
 import MyBookings from "./MyBookings";
+import Schedulevisit from "./Schedulevisit";
 import "./UserPro.css";
 
 function UserPro() {
 	const [myprofile, setmyprofile] = useState(true);
 	const [mybookings, setmybookings] = useState(false);
+	const [schedulevisit, setschedulevisit] = useState(false);
 	const handelsetmyprofile = () => {
 		setmyprofile(true);
 		setmybookings(false);
+		setschedulevisit(false);
 	};
 	const handelsetmybookings = () => {
 		setmyprofile(false);
+		setschedulevisit(false);
 		setmybookings(true);
+	};
+	const handelsetschedulevisit = () => {
+		setschedulevisit(true);
+		setmyprofile(false);
+		setmybookings(false);
 	};
 	useEffect(() => {});
 	return (
@@ -36,8 +45,12 @@ function UserPro() {
 								My Bookings
 							</a>
 						</p>
-						<p>
-							<a href='#'>Schedule a visit</a>
+						<p
+							style={{ borderLeft: schedulevisit ? "10px solid #12cad6" : "" }}
+						>
+							<a href='#' onClick={() => handelsetschedulevisit()}>
+								Schedule a visit
+							</a>
 						</p>
 						<p>
 							<a href='#'>Transaction history</a>
@@ -63,6 +76,9 @@ function UserPro() {
 							}}
 						>
 							<MyBookings />
+						</div>
+						<div style={{ display: schedulevisit ? "" : "none" }}>
+							<Schedulevisit />
 						</div>
 					</div>
 				</div>

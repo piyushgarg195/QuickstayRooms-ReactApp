@@ -207,7 +207,183 @@ function MyProfile() {
 						</div>
 					</div>
 				</div>
+				<div className='col-lg-12'>
+					<p>Do You have any food alergy?</p>
+					<div className='row'>
+						<div className='col-lg-4'>
+							<div class='custom-control custom-radio mb-3'>
+								<input
+									name='alergy'
+									class='custom-control-input'
+									id='alergy-yes'
+									type='radio'
+								/>
+								<label class='custom-control-label' for='alergy-yes'>
+									yes
+								</label>
+							</div>
+						</div>
+						<div className='col-lg-4'>
+							<div class='custom-control custom-radio mb-3'>
+								<input
+									name='alergy'
+									class='custom-control-input'
+									id='alergy-no'
+									type='radio'
+								/>
+								<label class='custom-control-label' for='alergy-no'>
+									no
+								</label>
+							</div>
+						</div>
+					</div>
+				</div>
+				<hr style={{ margin: "0  auto", width: "100%" }} />
+				<div className='col-lg-12'>
+					<p>How did you hear about us?</p>
+					<div className='row'>
+						<div className='col-lg-3'>
+							<div class='custom-control custom-checkbox mb-3'>
+								<input
+									class='custom-control-input'
+									id='Google Search'
+									type='checkbox'
+								/>
+								<label class='custom-control-label' for='Google Search'>
+									Google Search
+								</label>
+							</div>
+						</div>
+						<div className='col-lg-3'>
+							<div class='custom-control custom-checkbox mb-3'>
+								<input
+									class='custom-control-input'
+									id='Online Ad'
+									type='checkbox'
+								/>
+								<label class='custom-control-label' for='Online Ad'>
+									Online Ad
+								</label>
+							</div>
+						</div>
+						<div className='col-lg-3'>
+							<div class='custom-control custom-checkbox mb-3'>
+								<input
+									class='custom-control-input'
+									id='QuickStay branding'
+									type='checkbox'
+								/>
+								<label class='custom-control-label' for='QuickStay branding'>
+									QuickStay branding
+								</label>
+							</div>
+						</div>
+						<div className='col-lg-3'>
+							<div class='custom-control custom-checkbox mb-3'>
+								<input
+									class='custom-control-input'
+									id='Pamphlets'
+									type='checkbox'
+								/>
+								<label class='custom-control-label' for='Pamphlets'>
+									Pamphlets
+								</label>
+							</div>
+						</div>
+						<div className='col-lg-3'>
+							<div class='custom-control custom-checkbox mb-3'>
+								<input
+									class='custom-control-input'
+									id='From an existing QuickStayer'
+									type='checkbox'
+								/>
+								<label
+									class='custom-control-label'
+									for='From an existing QuickStayer'
+								>
+									From an existing QuickStayer
+								</label>
+							</div>
+						</div>
+						<div className='col-lg-3'>
+							<div class='custom-control custom-checkbox mb-3'>
+								<input
+									class='custom-control-input'
+									id='From a Friend'
+									type='checkbox'
+								/>
+								<label class='custom-control-label' for='From a Friend'>
+									From a Friend
+								</label>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div className='col-lg-12'>
+					<p>For how long will you be staying?</p>
+					<div className='row'>
+						<div className='col-lg-4'>
+							<div class='custom-control custom-radio mb-3'>
+								<input
+									name='time'
+									class='custom-control-input'
+									id='time-3'
+									type='radio'
+								/>
+								<label class='custom-control-label' for='time-3'>
+									Below 3 months
+								</label>
+							</div>
+						</div>
+						<div className='col-lg-4'>
+							<div class='custom-control custom-radio mb-3'>
+								<input
+									name='time'
+									class='custom-control-input'
+									id='time-3-6'
+									type='radio'
+								/>
+								<label class='custom-control-label' for='time-3-6'>
+									3-6 months
+								</label>
+							</div>
+						</div>
+						<div className='col-lg-4'>
+							<div class='custom-control custom-radio mb-3'>
+								<input
+									name='time'
+									class='custom-control-input'
+									id='time-6-12'
+									type='radio'
+								/>
+								<label class='custom-control-label' for='time-6-12'>
+									6-12 months
+								</label>
+							</div>
+						</div>
+						<div className='col-lg-4'>
+							<div class='custom-control custom-radio mb-3'>
+								<input
+									name='time'
+									class='custom-control-input'
+									id='time-12'
+									type='radio'
+								/>
+								<label class='custom-control-label' for='time-12'>
+									above 12 months
+								</label>
+							</div>
+						</div>
+					</div>
+				</div>
+				<button
+					style={{ width: "80%", margin: "0 auto" }}
+					className='btn btn-primary'
+				>
+					SAVE
+				</button>
 			</div>
+
 			{/* some more information ends here */}
 		</div>
 	);
