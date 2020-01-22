@@ -11,21 +11,24 @@
 .menu-item-wrapper.active {
 	border: 1px white solid;
 }
-.menu-item.active {
+/* .menu-item.active {
 	background-color: #b83227;
-}
+} */
 
 .scroll-menu-arrow {
 	padding: 20px;
 	cursor: pointer;
 }
-
+#home-find-quickstay-city-cards {
+	padding: 20px;
+}
 #home-find-quickstay-city-cards img {
 	display: block;
-	margin: 0 auto;
+	margin: auto;
 	width: 50%;
 }
 #home-find-quickstay-city-cards p {
 	text-align: center;
-	margin: 0;
+	margin: auto;
+	margin-top: 5%;
 }

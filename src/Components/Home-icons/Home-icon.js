@@ -56,7 +56,7 @@ function HomeIcon() {
 			>
 				<div className='col-lg-2 home-quickstay-icons-text'>
 					<p id='home-quickstay-icons-text-p1'>QuickStay</p>
-					<p id='home-quickstay-icons-text-p2'>ha to sahi h</p>
+					<p id='home-quickstay-icons-text-p2'>hai to sahi h</p>
 				</div>
 				<div className=' col-lg-10'>
 					<div className='row'>
@@ -88,7 +88,10 @@ function HomeIcon() {
 				className='home-quickstay-icons-container row'
 			>
 				<div className='col-lg-2 home-quickstay-icons-text'>
-					<p id='home-quickstay-icons-text-p1'>Stay ho to</p>
+					<p id='home-quickstay-icons-text-p1'>
+						Stay
+						<span style={{ fontSize: "large", fontWeight: 500 }}> ho to</span>
+					</p>
 					<p id='home-quickstay-icons-text-p2'>QuickStay jaisa</p>
 				</div>
 				<div className=' col-lg-10'>
@@ -141,19 +144,29 @@ function HomeIcon() {
 				style={{ width: "100%" }}
 				className='home-quickstay-icons-container row'
 			>
-				<div className='col-lg-2 home-quickstay-icons-text'>
+				<div className='col-lg-3 home-quickstay-icons-text'>
 					<p id='home-quickstay-icons-text-p1'>Get the</p>
 					<p id='home-quickstay-icons-text-p2'>QuickStay App</p>
-					<p style={{ textAlign: "center" }}>
+					<p
+						style={{
+							textAlign: "center",
+							fontSize: "x-large",
+							marginLeft: "80px",
+							marginTop: "50px"
+						}}
+					>
 						Download the QuickStay App and get everything done! From booking
 						online to getting every update, make your life easier
 					</p>
 				</div>
-				<div className=' col-lg-10'>
+				<div className=' col-lg-9'>
 					<div className='home-getapp-container'>
 						<img src='assets/homeIcons/en_badge_web_generic.png'></img>
 						<img src='assets/homeIcons/download-on-app-store-png-download-1272.png'></img>
-						<img src='assets/homeIcons/iphone-iphone_x-_iphonex-mobile-apple-device-2-512.png'></img>
+						<img
+							id='home-getapp-container-img'
+							src='assets/homeIcons/iphoneX-715x1090.png'
+						></img>
 					</div>
 				</div>
 			</div>

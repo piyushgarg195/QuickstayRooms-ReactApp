@@ -7,13 +7,13 @@ function Footer() {
 			<div className='footer-bg-img'>
 				<img
 					id='footer-bg-img-img'
-					src='https://images.unsplash.com/photo-1513694203232-719a280e022f?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1049&q=80'
+					src='assets/homeIcons/camera-da-letto-rilassante-1024x683.jpg'
 				></img>
 				<div className='footer-bg-text'>
 					<div style={{ width: "100%" }} className='row'>
 						<div className='col-lg-6 footer-bg-text-left'>
 							<div className='footer-bg-text-left-address'>
-								<h4>QuickStay</h4>
+								<h1>QuickStay</h1>
 								<p>Chitkara Innovation Incubator Foundation,</p>
 								<p>Sector 4, Mansa Devi Complex,</p>
 								<p>Panchkula, Haryana</p>
@@ -43,7 +43,7 @@ function Footer() {
 							</div>
 						</div>
 						<div className='col-lg-6 footer-bg-text-right'>
-							<h4>Contact Us</h4>
+							<h1>Contact Us</h1>
 							<form>
 								<div className='form-group'>
 									<input

@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Nunito+Sans:400,600&display=swap");
 .home-findquickstay-container {
 	margin-top: 20px;
 }
@@ -8,6 +9,7 @@
 }
 .home-find-quickstay img {
 	/* transform: rotate(deg); */
+	width: 80%;
 	transform: scaleX(-1);
 }
 .home-find-quickstay p {
@@ -15,8 +17,10 @@
 	top: 50%;
 	left: 50%;
 	/* right: 50%; */
-	width: 80px;
+	width: 200px;
+	font-family: "Nunito Sans", sans-serif;
 	font-weight: 1000;
+	font-size: x-large;
 	transform: translate(-50%, -50%);
 }
 /* .home-find-quickstay-city-cards {
@@ -46,7 +50,9 @@
 	height: 30px;
 }
 #home-quickstay-icons-text-p1 {
-	height: 30px;
+	font-family: "Nunito Sans", sans-serif;
+	font-size: x-large;
+	height: 38px;
 	background-color: aqua;
 	position: relative;
 	top: 20px;
@@ -55,11 +61,13 @@
 	text-align: center;
 }
 #home-quickstay-icons-text-p2 {
+	font-family: "Nunito Sans", sans-serif;
+	font-size: large;
 	background-color: white;
 	position: relative;
 	top: 10px;
 	left: 30px;
-	font-weight: 1000;
+	/* font-weight: 1000; */
 	text-align: center;
 }
 .home-quickstay-icons {
@@ -75,9 +83,9 @@
 }
 .home-quickstay-icons img {
 	display: block;
-	margin: 0 auto;
-	width: 50px;
-	height: 50px;
+	margin: 25px auto;
+	width: 80px;
+	height: 80px;
 }
 .home-quickstay-icons p {
 	text-align: center;
@@ -90,15 +98,18 @@
 }
 .home-getapp-container {
 	display: block;
-	margin-top: 50px;
-	margin-left: 40%;
+	/* margin-top: 10%; */
+	margin-left: 20%;
 }
 @media only screen and (max-width: 992px) {
 	.home-getapp-container {
-		margin-top: 200px;
+		margin-top: 250px;
 		margin-left: 10%;
 	}
 }
 .home-getapp-container img {
 	width: 200px;
+}
+#home-getapp-container-img {
+	width: 300px;
 }

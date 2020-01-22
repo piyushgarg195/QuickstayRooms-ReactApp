@@ -41,9 +41,11 @@ const MenuItem = ({ text, selected, url, experi }) => {
 	return (
 		<div className={`menu-item-user }`} id='home-find-quickstay-user-cards'>
 			<img src={url}></img>
-			<p>{text}</p>
-			<hr style={{ margin: 5 }}></hr>
-			<p>{experi}</p>
+			<div id="home-find-quickstay-user-cards-content">
+				<p>{text}</p>
+				<hr style={{ margin: 5 }}></hr>
+				<p>{experi}</p>
+			</div>
 		</div>
 	);
 };
